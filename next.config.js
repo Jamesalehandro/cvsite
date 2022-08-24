@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  devIndicators: {
+    buildActivityPosition: 'top-right',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
