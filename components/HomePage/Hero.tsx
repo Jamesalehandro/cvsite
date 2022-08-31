@@ -20,7 +20,7 @@ const Hero = () => {
         justifyContent={'center'}
         maxW={'1200px'}
         minH={'400px'}
-        py={'100px'}
+        py={{ base: '50px', xl: '140px', '2xl': '180px' }}
         gap={{ base: '30px', xl: '100px', '2xl': '150px' }}
         zIndex={2}
         justifySelf={'center'}
