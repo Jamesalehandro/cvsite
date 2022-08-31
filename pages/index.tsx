@@ -1,8 +1,12 @@
 import type { NextPage } from 'next';
-import styles from '../styles/Home.module.css';
+import Hero from '../components/HomePage/Hero';
 
 const Home: NextPage = () => {
-  return <h1>Hello World</h1>;
+  return (
+    <div style={{ width: '100%', minHeight: '100vh' }}>
+      <Hero />
+    </div>
+  );
 };
 
 export default Home;
