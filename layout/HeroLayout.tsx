@@ -18,7 +18,7 @@ const HeroLayout = ({ children }: LayoutProps) => {
         layout={'fill'}
         objectFit={'cover'}
         priority
-        loading="eager"
+        // loading={'eager'}
       />
       <Image
         src={herobg}
@@ -26,7 +26,7 @@ const HeroLayout = ({ children }: LayoutProps) => {
         layout={'fill'}
         objectFit={'cover'}
         priority
-        loading={'eager'}
+        // loading={'eager'}
       />
       {children}
     </VStack>
