@@ -1,12 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Flex, LinkBox } from '@chakra-ui/react';
-
-interface NavLink {
-  path: string;
-  title: string;
-  icon?: string;
-}
+import { NavLink } from '../../models';
+import { DEFAULT_STYLES } from '../../styles/customStyles';
 
 interface Prop {
   navLink: NavLink[];
@@ -18,11 +14,11 @@ const Nav = ({ navLink }: Prop) => {
     return (
       <LinkBox
         key={i}
-        color={'white'}
+        color={DEFAULT_STYLES.whiteColor}
         minWidth={'164px'}
         minH={'28px'}
-        fontWeight={700}
-        fontSize={'20px'}
+        fontWeight={DEFAULT_STYLES.boldFontWeight}
+        fontSize={14}
         lineHeight={'30px'}
         role={'group'}
       >
@@ -34,7 +30,7 @@ const Nav = ({ navLink }: Prop) => {
           }}
         >
           <Link href={nav.path}>{nav.title}</Link>
-          {nav.icon && <Image src={nav.icon} alt={nav.title} />}
+          {nav.icon && <Image src={nav.icon} alt={nav.title} priority />}
         </Flex>
       </LinkBox>
     );
@@ -43,10 +39,10 @@ const Nav = ({ navLink }: Prop) => {
   return (
     <Flex
       zIndex={1}
-      w={'full'}
+      w={DEFAULT_STYLES.fullWidth}
       justifyContent={'flex-end'}
       pr={{ base: '20px', xl: '50px' }}
-      pt={7}
+      pt={5}
     >
       {renderNav}
     </Flex>

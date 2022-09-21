@@ -1,6 +1,6 @@
-import { Button } from '@chakra-ui/react';
 import Link from 'next/link';
-import { ReactElement } from 'react';
+import { Button } from '@chakra-ui/react';
+import { IconType } from 'react-icons';
 
 interface Props {
   width:
@@ -16,7 +16,7 @@ interface Props {
   bgColor: string;
   title: string;
   border?: string;
-  leftIcon?: ReactElement;
+  leftIcon?: IconType;
   link?: string;
   internalLink?: string;
 }
@@ -33,37 +33,91 @@ const ButtonComp = ({
   internalLink,
 }: Props) => {
   return (
-    <Button
-      minWidth={width}
-      height={height}
-      padding={'20px 30px 20px 30px'}
-      color={color}
-      bgColor={bgColor}
-      borderRadius={'50px'}
-      transition={'all linear 250ms'}
-      border={border}
-      fontSize={{ base: '20px', xl: '18px', '2xl': '24px' }}
-      fontWeight={700}
-      lineHeight={'36px'}
-      textAlign={'center'}
-      zIndex={1000}
-      leftIcon={leftIcon}
-      _hover={{
-        bgColor: bgColor,
-      }}
-      _active={{
-        bgColor: bgColor,
-        transform: 'scale(0.989)',
-      }}
-    >
-      {link ? (
-        <a href={link}>{title}</a>
-      ) : internalLink ? (
-        <Link href={internalLink}>{title}</Link>
+    <>
+      {internalLink ? (
+        <Link href={internalLink}>
+          <Button
+            minWidth={width}
+            height={height}
+            padding={'20px 30px 20px 30px'}
+            color={color}
+            bgColor={bgColor}
+            borderRadius={'50px'}
+            transition={'all linear 250ms'}
+            border={border}
+            fontSize={{ base: '20px', xl: '18px', '2xl': '24px' }}
+            fontWeight={700}
+            lineHeight={'36px'}
+            textAlign={'center'}
+            zIndex={1000}
+            // leftIcon={leftIcon}
+            _hover={{
+              bgColor: bgColor,
+            }}
+            _active={{
+              bgColor: bgColor,
+              transform: 'scale(0.989)',
+            }}
+          >
+            {title}
+          </Button>
+        </Link>
+      ) : link ? (
+        <a href={link}>
+          <Button
+            minWidth={width}
+            height={height}
+            padding={'20px 30px 20px 30px'}
+            color={color}
+            bgColor={bgColor}
+            borderRadius={'50px'}
+            transition={'all linear 250ms'}
+            border={border}
+            fontSize={{ base: '20px', xl: '18px', '2xl': '24px' }}
+            fontWeight={700}
+            lineHeight={'36px'}
+            textAlign={'center'}
+            zIndex={1000}
+            // leftIcon={leftIcon}
+            _hover={{
+              bgColor: bgColor,
+            }}
+            _active={{
+              bgColor: bgColor,
+              transform: 'scale(0.989)',
+            }}
+          >
+            {title}
+          </Button>
+        </a>
       ) : (
-        title
+        <Button
+          minWidth={width}
+          height={height}
+          padding={'20px 30px 20px 30px'}
+          color={color}
+          bgColor={bgColor}
+          borderRadius={'50px'}
+          transition={'all linear 250ms'}
+          border={border}
+          fontSize={{ base: '20px', xl: '18px', '2xl': '24px' }}
+          fontWeight={700}
+          lineHeight={'36px'}
+          textAlign={'center'}
+          zIndex={1000}
+          // leftIcon={leftIcon}
+          _hover={{
+            bgColor: bgColor,
+          }}
+          _active={{
+            bgColor: bgColor,
+            transform: 'scale(0.989)',
+          }}
+        >
+          {title}
+        </Button>
       )}
-    </Button>
+    </>
   );
 };
 

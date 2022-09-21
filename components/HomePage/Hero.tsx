@@ -1,11 +1,12 @@
 import HeroLayout from '../../layout/HeroLayout';
 import Nav from '../NavBar/Nav';
-import resumeIcon from '../../assets/media/img/onlineresume.svg';
-import tree from '../../assets/media/img/tree.svg';
 import Image from 'next/image';
 import ButtonComp from '../Button/Button';
+import resumeIcon from '../../assets/media/img/onlineresume.png';
+import tree from '../../assets/media/img/tree.png';
 import { Box, Flex, Heading, HStack, Stack, Text } from '@chakra-ui/react';
 import { cvRoutes } from '../../utils/routes';
+import { DEFAULT_STYLES } from '../../styles/customStyles';
 
 const Hero = () => {
   return (
@@ -17,33 +18,46 @@ const Hero = () => {
       />
 
       <Flex
+        maxW={DEFAULT_STYLES.containerWidth}
         justifyContent={'center'}
-        maxW={'1200px'}
         minH={'400px'}
         py={{ base: '50px', xl: '140px', '2xl': '180px' }}
-        gap={{ base: '30px', xl: '100px', '2xl': '150px' }}
+        gap={{ base: '30px', xl: '150px' }}
         zIndex={2}
         justifySelf={'center'}
         alignSelf={'center'}
       >
         <Stack
-          color={'white'}
+          color={DEFAULT_STYLES.whiteColor}
+          fontWeight={DEFAULT_STYLES.boldFontWeight}
           justifyContent={'center'}
-          fontWeight={700}
           gap={'35px'}
           flex={1}
         >
-          <Heading height={'48px'} fontSize={'24px'} lineHeight={'36px'}>
+          <Heading
+            fontSize={'24px'}
+            fontFamily={DEFAULT_STYLES.fontFamily}
+            lineHeight={'36px'}
+          >
             Hi, I am
           </Heading>
 
-          <Heading fontSize={{ base: '30px', xl: '56px' }} lineHeight={'84px'}>
+          <Heading
+            fontSize={{ base: '30px', xl: '56px' }}
+            lineHeight={'84px'}
+            fontFamily={DEFAULT_STYLES.fontFamily}
+          >
             Chigbo James
           </Heading>
 
           <Heading
-            fontSize={{ base: '25px', xl: '25px', '2xl': '32px' }}
+            fontSize={{
+              base: '25px',
+              xl: '25px',
+              '2xl': DEFAULT_STYLES.headerFontSize,
+            }}
             lineHeight={'48px'}
+            fontFamily={DEFAULT_STYLES.fontFamily}
           >
             Front End Developer
           </Heading>
@@ -52,8 +66,8 @@ const Hero = () => {
             <ButtonComp
               width={'223px'}
               height={'64px'}
-              bgColor={'#FFFFFF'}
-              color={'#121212'}
+              bgColor={DEFAULT_STYLES.whiteColor}
+              color={DEFAULT_STYLES.darkColor}
               title={'Case studies'}
               internalLink={cvRoutes.caseStudy}
             />
@@ -62,9 +76,9 @@ const Hero = () => {
               width={'223px'}
               height={'64px'}
               bgColor={'transparent'}
-              color={'#FFFF'}
+              color={DEFAULT_STYLES.whiteColor}
               title={'Connect with me'}
-              border={'1px solid #FFF'}
+              border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
               link={'https://www.twitter.com/Chigbo_James'}
             />
           </HStack>
@@ -77,7 +91,7 @@ const Hero = () => {
           align={'center'}
         >
           <Box
-            zIndex={1000}
+            zIndex={1}
             width={'600px'}
             height={'400px'}
             position={'absolute'}
@@ -91,14 +105,22 @@ const Hero = () => {
             />
           </Box>
 
-          <Flex zIndex={2000} color={'white'} gap={2} alignItems={'flex-start'}>
+          <Flex
+            color={DEFAULT_STYLES.whiteColor}
+            zIndex={2}
+            gap={2}
+            alignItems={'flex-start'}
+          >
             <Text
-              w={{ base: '100%', xl: '400px', '2xl': '550px' }}
-              fontSize={'20px'}
+              w={{
+                base: DEFAULT_STYLES.fullWidth,
+                xl: '400px',
+                '2xl': '550px',
+              }}
+              fontSize={18}
               textAlign={'justify'}
               whiteSpace={'pre-wrap'}
               lineHeight={1.7}
-              fontWeight={400}
             >
               I am a front-end developer specialized in building and
               occasionally designing exceptional digital experiences. Currently,
