@@ -18,11 +18,11 @@ const Hero = () => {
       />
 
       <Flex
-        maxW={DEFAULT_STYLES.containerWidth}
+        w={DEFAULT_STYLES.containerWidth}
         justifyContent={'center'}
         minH={'400px'}
         py={{ base: '50px', xl: '140px', '2xl': '180px' }}
-        gap={{ base: '30px', xl: '150px' }}
+        gap={{ base: '30px', xl: '50px' }}
         zIndex={2}
         justifySelf={'center'}
         alignSelf={'center'}
@@ -64,8 +64,6 @@ const Hero = () => {
 
           <HStack pt={'48px'} align={'center'} gap={3}>
             <ButtonComp
-              width={'223px'}
-              height={'64px'}
               bgColor={DEFAULT_STYLES.whiteColor}
               color={DEFAULT_STYLES.darkColor}
               title={'Case studies'}
@@ -73,8 +71,6 @@ const Hero = () => {
             />
 
             <ButtonComp
-              width={'223px'}
-              height={'64px'}
               bgColor={'transparent'}
               color={DEFAULT_STYLES.whiteColor}
               title={'Connect with me'}

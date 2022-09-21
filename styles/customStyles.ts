@@ -11,7 +11,7 @@ export const DEFAULT_STYLES = {
   mediumFontWeight: 500,
   semiBoldFontWeight: 600,
   smallTextFontSize: 14,
-  headerFontSize: 32,
+  headerFontSize: 28,
   darkColor: '#121212',
   fontFamily: " 'Poppins', sans-serif",
   bodyHeaderFontSize: 20,

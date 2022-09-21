@@ -5,6 +5,9 @@ const nextConfig = {
   devIndicators: {
     buildActivityPosition: 'top-left',
   },
+  images: {
+    domains: ['terrahq.nyc3.cdn.digitaloceanspaces.com'],
+  },
 };
 
 module.exports = nextConfig;

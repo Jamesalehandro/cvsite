@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import mostusedbg from '../assets/media/img/mostusedbg.png';
 import herobg from '../assets/media/img/herobg.png';
 import { VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../styles/customStyles';
 import { LayoutProps } from '../models';
+import { customBg } from '../store/shared';
 
 const HeroLayout = ({ children }: LayoutProps) => {
   return (
@@ -13,7 +13,7 @@ const HeroLayout = ({ children }: LayoutProps) => {
       position={'relative'}
     >
       <Image
-        src={mostusedbg}
+        src={customBg}
         alt={'Chigbo James'}
         layout={'fill'}
         objectFit={'cover'}

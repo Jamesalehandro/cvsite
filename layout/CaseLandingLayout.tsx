@@ -7,6 +7,7 @@ import {
   UnorderedList,
   VStack,
 } from '@chakra-ui/react';
+import { DEFAULT_STYLES } from '../styles/customStyles';
 
 interface Props {
   header: string;
@@ -18,54 +19,41 @@ interface Props {
 const CaseLandingLayout = ({ header, title, list, onclick }: Props) => {
   // Render
   const renderList = list?.map((item, i) => (
-    <ListItem key={i} fontSize={'20px'} lineHeight={'30px'} fontWeight={400}>
+    <ListItem key={i} lineHeight={1.8}>
       {item}
     </ListItem>
   ));
 
   return (
-    <VStack
-      color={'white'}
-      align={'flex-start'}
-      justify={'center'}
-      px={'30px'}
-      gap={2}
-    >
+    <VStack align={'flex-start'} width={'456px'} gap={2} zIndex={3000}>
       <Heading
-        minWidth={'85px'}
-        height={'48px'}
-        color={'white'}
-        fontWeight={700}
-        fontSize={'32px'}
-        lineHeight={'48px'}
+        color={DEFAULT_STYLES.whiteColor}
+        fontWeight={DEFAULT_STYLES.boldFontWeight}
+        fontSize={DEFAULT_STYLES.headerFontSize}
+        fontFamily={DEFAULT_STYLES.fontFamily}
         textAlign={'center'}
         textTransform={'capitalize'}
       >
         {header}
       </Heading>
 
-      <Text
-        width={'456px'}
-        minHeight={'60px'}
-        color={'white'}
-        fontWeight={400}
-        fontSize={'20px'}
-        lineHeight={'30px'}
-      >
+      <Text color={DEFAULT_STYLES.whiteColor} lineHeight={1.8}>
         {title}
       </Text>
 
-      <Box width={'456px'} border={'1.5px solid #FFFFFF '} />
+      <Box
+        width={DEFAULT_STYLES.fullWidth}
+        border={`1px solid ${DEFAULT_STYLES.whiteColor} `}
+        opacity={0.5}
+      />
 
-      <UnorderedList minWidth={'471px'} minHeight={'150px'} pl={5} pb={'40px'}>
+      <UnorderedList pl={3.5} pb={'40px'}>
         {renderList}
       </UnorderedList>
 
       <ButtonComp
-        width={{ base: '319px', xl: '200px', '2xl': '319px' }}
-        height={'68px'}
-        bgColor={'#FFFFFF'}
-        color={'#121212'}
+        bgColor={DEFAULT_STYLES.whiteColor}
+        color={DEFAULT_STYLES.darkColor}
         title={'View project'}
       />
     </VStack>

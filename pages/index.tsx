@@ -1,6 +1,8 @@
 import Hero from '../components/HomePage/Hero';
 import type { NextPage } from 'next';
 import { DEFAULT_STYLES } from '../styles/customStyles';
+import Certificate from '../components/HomePage/Certificate';
+import Nestuge from '../components/HomePage/Nestuge';
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +13,8 @@ const Home: NextPage = () => {
       }}
     >
       <Hero />
+      <Certificate />
+      <Nestuge />
     </div>
   );
 };
