@@ -29,6 +29,8 @@ const Certificate = () => {
             See official certificate{' '}
             <a
               href="https://certificate.terrahq.co/44564AHQC22"
+              target={'_blank'}
+              rel="noopener noreferrer"
               style={{
                 color: '#0075FF',
                 fontWeight: 400,
