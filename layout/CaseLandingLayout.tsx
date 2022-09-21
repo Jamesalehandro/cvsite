@@ -1,3 +1,4 @@
+import ButtonComp from '../components/Button/Button';
 import {
   Box,
   Heading,
@@ -6,7 +7,6 @@ import {
   UnorderedList,
   VStack,
 } from '@chakra-ui/react';
-import ButtonComp from '../components/Button/Button';
 
 interface Props {
   header: string;
@@ -14,6 +14,7 @@ interface Props {
   list: string[];
   onclick?: () => void;
 }
+
 const CaseLandingLayout = ({ header, title, list, onclick }: Props) => {
   // Render
   const renderList = list?.map((item, i) => (
