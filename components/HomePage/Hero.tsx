@@ -47,7 +47,7 @@ const Hero = () => {
             lineHeight={'84px'}
             fontFamily={DEFAULT_STYLES.fontFamily}
           >
-            Chigbo James
+            Chigbo
           </Heading>
 
           <Heading
