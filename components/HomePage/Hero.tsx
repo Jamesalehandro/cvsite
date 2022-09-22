@@ -1,6 +1,6 @@
 import HeroLayout from '../../layout/HeroLayout';
 import Nav from '../NavBar/Nav';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import ButtonComp from '../Button/Button';
 import resumeIcon from '../../assets/media/img/onlineresume.png';
 import tree from '../../assets/media/img/tree.png';
@@ -35,7 +35,7 @@ const Hero = () => {
           flex={1}
         >
           <Heading
-            fontSize={'24px'}
+            fontSize={24}
             fontFamily={DEFAULT_STYLES.fontFamily}
             lineHeight={'36px'}
           >
@@ -43,17 +43,17 @@ const Hero = () => {
           </Heading>
 
           <Heading
+            fontFamily={DEFAULT_STYLES.fontFamily}
             fontSize={{ base: '30px', xl: '56px' }}
             lineHeight={'84px'}
-            fontFamily={DEFAULT_STYLES.fontFamily}
           >
             Chigbo James
           </Heading>
 
           <Heading
             fontSize={{
-              base: '25px',
-              xl: '25px',
+              base: 25,
+              xl: 25,
               '2xl': DEFAULT_STYLES.headerFontSize,
             }}
             lineHeight={'48px'}
@@ -87,17 +87,20 @@ const Hero = () => {
           align={'center'}
         >
           <Box
-            zIndex={1}
             width={'600px'}
             height={'400px'}
             position={'absolute'}
             top={{ base: 0, xl: '-90px', '2xl': '-70px' }}
+            userSelect={'none'}
           >
             <Image
               src={tree}
-              alt={'full'}
-              layout={'fill'}
-              objectFit={'cover'}
+              alt={'tree'}
+              fill
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center',
+              }}
             />
           </Box>
 

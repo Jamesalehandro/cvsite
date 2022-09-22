@@ -7,9 +7,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth !important;
 }
 
 ::selection {
-  color: white;
-  background-color: darkgoldenrod;
+  color: #262626;
+  background-color: white;
 }

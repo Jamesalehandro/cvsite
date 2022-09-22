@@ -1,10 +1,9 @@
 import Hero from '../components/HomePage/Hero';
-import type { NextPage } from 'next';
-import { DEFAULT_STYLES } from '../styles/customStyles';
 import Certificate from '../components/HomePage/Certificate';
 import Nestuge from '../components/HomePage/Nestuge';
+import { DEFAULT_STYLES } from '../styles/customStyles';
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <div
       style={{

@@ -1,54 +1,74 @@
 import { Box } from '@chakra-ui/react';
+import Image, { StaticImageData } from 'next/future/image';
 
-const Images = () => {
+type Props = {
+  leftIcon: StaticImageData;
+  centerIcon: StaticImageData;
+  rightIcon: StaticImageData;
+};
+
+const Images = ({ leftIcon, centerIcon, rightIcon }: Props) => {
   return (
     <Box flex={1} position={'relative'} minH={'600px'}>
       <Box
         position={'absolute'}
-        left={{ base: '100%', xl: '50px', '2xl': '180px' }}
-        top={'-50px'}
-        width={{ base: '100%', xl: '300px', '2xl': '360px' }}
-        height={'600px'}
+        left={{ base: '100%', xl: '100px', '2xl': '180px' }}
+        width={{ base: '100%', xl: '300px' }}
+        height={'500px'}
         transform={'rotate(-30deg)'}
         bgColor={'#111111'}
         borderRadius={'5px'}
-        sx={{
-          '@media (min-width: 1440px) and (max-width:1800px)': {
-            width: '330px',
-          },
-        }}
-      />
+        bottom={'80px'}
+      >
+        <Image
+          src={leftIcon}
+          alt={'Nestuge'}
+          fill
+          style={{
+            objectFit: 'cover',
+          }}
+        />
+      </Box>
 
       <Box
         position={'absolute'}
         zIndex={3000}
-        left={{ base: '100%', xl: '150px', '2xl': '340px' }}
-        width={{ base: '100%', xl: '300px', '2xl': '360px' }}
-        height={'600px'}
+        left={{ base: '100%', xl: '190px', '2xl': '340px' }}
+        width={{ base: '100%', xl: '300px' }}
+        height={'500px'}
         bgColor={'#333333'}
         borderRadius={'5px'}
-        sx={{
-          '@media (min-width: 1440px) and (max-width:1800px)': {
-            width: '330px',
-          },
-        }}
-      />
+        bottom={'80px'}
+      >
+        <Image
+          src={centerIcon}
+          alt={'Nestuge'}
+          fill
+          style={{
+            objectFit: 'cover',
+          }}
+        />
+      </Box>
 
       <Box
         position={'absolute'}
-        left={{ base: '100%', xl: '300px', '2xl': '500px' }}
-        top={3}
-        width={{ base: '100%', xl: '300px', '2xl': '360px' }}
-        height={'600px'}
+        left={{ base: '100%', xl: '350px', '2xl': '500px' }}
+        width={{ base: '100%', xl: '300px' }}
+        height={'500px'}
         transform={'rotate(30deg)'}
         bgColor={'#222222'}
+        bottom={'80px'}
         borderRadius={'5px'}
-        sx={{
-          '@media (min-width: 1440px) and (max-width:1800px)': {
-            width: '330px',
-          },
-        }}
-      />
+      >
+        <Image
+          src={rightIcon}
+          alt={'Nestuge'}
+          fill
+          style={{
+            objectFit: 'cover',
+          }}
+        />
+      </Box>
     </Box>
   );
 };

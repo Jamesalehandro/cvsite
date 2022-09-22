@@ -1,5 +1,9 @@
+import Images from '../../layout/Images';
 import Image from 'next/image';
 import CaseLandingLayout from '../../layout/CaseLandingLayout';
+import leftIcon from '../../assets/media/img/nestuge.png';
+import centerIcon from '../../assets/media/img/nestuge.png';
+import rightIcon from '../../assets/media/img/nestuge.png';
 import { Flex, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
 import { customBg } from '../../store';
@@ -22,10 +26,11 @@ const Nestuge = () => {
       />
       <Flex
         w={DEFAULT_STYLES.containerWidth}
-        minH={'600px'}
+        minH={'700px'}
         align={'center'}
         color={DEFAULT_STYLES.whiteColor}
         zIndex={2}
+        position={'relative'}
       >
         <CaseLandingLayout
           header={'Nestuge'}
@@ -37,6 +42,12 @@ const Nestuge = () => {
             'Role: Front end Developer',
             'Tools: ReactJs(NextJs), Firebase,Chakra ui',
           ]}
+        />
+
+        <Images
+          leftIcon={leftIcon}
+          rightIcon={rightIcon}
+          centerIcon={centerIcon}
         />
       </Flex>
     </VStack>

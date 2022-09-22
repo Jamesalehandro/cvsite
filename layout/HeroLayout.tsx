@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import herobg from '../assets/media/img/herobg.png';
 import { VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../styles/customStyles';
@@ -15,18 +15,21 @@ const HeroLayout = ({ children }: LayoutProps) => {
       <Image
         src={customBg}
         alt={'Chigbo James'}
-        layout={'fill'}
-        objectFit={'cover'}
+        fill
+        style={{
+          objectFit: 'cover',
+        }}
         priority
-        loading={'eager'}
       />
+
       <Image
         src={herobg}
         alt={'Chigbo James'}
-        layout={'fill'}
-        objectFit={'cover'}
+        fill
+        style={{
+          objectFit: 'cover',
+        }}
         priority
-        loading={'eager'}
       />
       {children}
     </VStack>
