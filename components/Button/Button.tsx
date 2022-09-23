@@ -14,6 +14,7 @@ interface Props {
   link?: string;
   internalLink?: string;
   onClick?: () => void;
+  download?: boolean;
 }
 
 const ButtonComp = ({
@@ -27,42 +28,50 @@ const ButtonComp = ({
   link,
   internalLink,
   onClick,
+  download,
 }: Props) => {
   return (
     <>
       {internalLink ? (
         <Link href={internalLink}>
-          <Button
-            minWidth={width ?? '223px'}
-            height={height ?? '64px'}
-            color={color}
-            bgColor={bgColor}
-            borderRadius={'50px'}
-            transition={'all linear 250ms'}
-            border={border}
-            fontSize={18}
-            fontWeight={DEFAULT_STYLES.boldFontWeight}
-            textAlign={'center'}
-            display={'flex'}
-            gap={5}
-            onClick={onClick}
-            zIndex={1000}
-            _hover={{
-              bgColor: bgColor,
-            }}
-            _active={{
-              bgColor: bgColor,
-              transform: 'scale(0.989)',
-            }}
-          >
-            <>
-              {leftIcon && leftIcon}
-              {title}
-            </>
-          </Button>
+          <a>
+            <Button
+              minWidth={width ?? '223px'}
+              height={height ?? '64px'}
+              color={color}
+              bgColor={bgColor}
+              borderRadius={'50px'}
+              transition={'all linear 250ms'}
+              border={border}
+              fontSize={18}
+              fontWeight={DEFAULT_STYLES.boldFontWeight}
+              textAlign={'center'}
+              display={'flex'}
+              gap={5}
+              onClick={onClick}
+              zIndex={1000}
+              _hover={{
+                bgColor: bgColor,
+              }}
+              _active={{
+                bgColor: bgColor,
+                transform: 'scale(0.989)',
+              }}
+            >
+              <>
+                {leftIcon && leftIcon}
+                {title}
+              </>
+            </Button>
+          </a>
         </Link>
       ) : link ? (
-        <a href={link} target={'_blank'} rel="noopener noreferrer">
+        <a
+          href={link}
+          target={'_blank'}
+          download={download}
+          rel="noopener noreferrer"
+        >
           <Button
             minWidth={width ?? '223px'}
             height={height ?? '64px'}

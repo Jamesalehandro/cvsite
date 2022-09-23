@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Link from 'next/link';
 import { Flex, LinkBox } from '@chakra-ui/react';
 import { NavLink } from '../../models';
@@ -18,7 +18,7 @@ const Nav = ({ navLink }: Prop) => {
         minWidth={'164px'}
         minH={'28px'}
         fontWeight={DEFAULT_STYLES.boldFontWeight}
-        fontSize={14}
+        fontSize={DEFAULT_STYLES.smallTextFontSize}
         lineHeight={'30px'}
         role={'group'}
       >
@@ -30,7 +30,9 @@ const Nav = ({ navLink }: Prop) => {
           }}
         >
           <Link href={nav.path}>{nav.title}</Link>
-          {nav.icon && <Image src={nav.icon} alt={nav.title} priority />}
+          {nav.icon && (
+            <Image src={nav.icon} alt={nav.title} priority quality={100} />
+          )}
         </Flex>
       </LinkBox>
     );

@@ -24,19 +24,19 @@ const ProjectLayout = (props: Props) => {
         src={customBg}
         alt={'Chigbo James'}
         fill
-        style={{ objectFit: 'cover' }}
         priority
+        style={{ objectFit: 'cover' }}
       />
 
       {props.header && (
         <Heading
           color={DEFAULT_STYLES.whiteColor}
           fontWeight={DEFAULT_STYLES.mediumFontWeight}
+          fontFamily={DEFAULT_STYLES.fontFamily}
           fontSize={24}
           lineHeight={'36px'}
           textAlign={'center'}
           zIndex={2}
-          fontFamily={DEFAULT_STYLES.fontFamily}
         >
           Featured Projects
         </Heading>

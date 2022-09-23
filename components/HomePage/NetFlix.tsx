@@ -1,12 +1,12 @@
 import Images from '../../layout/Images';
-import CaseLandingLayout from '../../layout/CaseLandingLayout';
+import ProjectListComponent from '../../layout/ProjectListComponent';
 import leftIcon from '../../assets/media/img/netflix.jpeg';
 import ProjectLayout from '../../layout/ProjectLayout';
 
 const NetFlix = () => {
   return (
     <ProjectLayout footer>
-      <CaseLandingLayout
+      <ProjectListComponent
         header={'Netflix'}
         title={
           'This is a netflix clone where you can create account and sign in and list the list of different movies and shows.'

@@ -16,10 +16,14 @@ interface Props {
   link: string;
 }
 
-const CaseLandingLayout = ({ header, title, list, link }: Props) => {
+const ProjectListComponent = ({ header, title, list, link }: Props) => {
   // Render
   const renderList = list?.map((item, i) => (
-    <ListItem key={i} lineHeight={1.8}>
+    <ListItem
+      key={i}
+      lineHeight={1.8}
+      fontSize={DEFAULT_STYLES.smallTextFontSize}
+    >
       {item}
     </ListItem>
   ));
@@ -61,4 +65,4 @@ const CaseLandingLayout = ({ header, title, list, link }: Props) => {
   );
 };
 
-export default CaseLandingLayout;
+export default ProjectListComponent;

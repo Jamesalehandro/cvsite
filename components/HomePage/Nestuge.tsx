@@ -1,5 +1,5 @@
 import Images from '../../layout/Images';
-import CaseLandingLayout from '../../layout/CaseLandingLayout';
+import ProjectListComponent from '../../layout/ProjectListComponent';
 import leftIcon from '../../assets/media/img/leftnestuge.jpeg';
 import ProjectLayout from '../../layout/ProjectLayout';
 
@@ -8,7 +8,7 @@ const Nestuge = () => {
     <ProjectLayout>
       <Images centerIcon={leftIcon} />
 
-      <CaseLandingLayout
+      <ProjectListComponent
         header={'Nestuge'}
         title={
           'A web app that helps you create and manage access to your online events on WhatsApp, Google Meet collect payments and enagage your audience from one place.'

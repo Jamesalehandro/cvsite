@@ -16,10 +16,10 @@ const HeroLayout = ({ children }: LayoutProps) => {
         src={customBg}
         alt={'Chigbo James'}
         fill
+        priority
         style={{
           objectFit: 'cover',
         }}
-        priority
       />
 
       <Image

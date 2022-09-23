@@ -77,8 +77,9 @@ const Hero = () => {
             <ButtonComp
               bgColor={DEFAULT_STYLES.whiteColor}
               color={DEFAULT_STYLES.darkColor}
-              title={'Case studies'}
-              internalLink={cvRoutes.caseStudy}
+              title={'Download Resume'}
+              link={'resume.pdf'}
+              download
             />
 
             <ButtonComp

@@ -1,12 +1,12 @@
 import Images from '../../layout/Images';
-import CaseLandingLayout from '../../layout/CaseLandingLayout';
+import ProjectListComponent from '../../layout/ProjectListComponent';
 import leftIcon from '../../assets/media/img/dyserf.png';
 import ProjectLayout from '../../layout/ProjectLayout';
 
 const Dyserf = () => {
   return (
     <ProjectLayout header>
-      <CaseLandingLayout
+      <ProjectListComponent
         header={'DYSERF'}
         title={
           ' This was built as a project for a product designer. The project shows what the company does and why you should hire them. This was built with NextJS,AOS for scrolling animations and Chakra UI as the design system.'
