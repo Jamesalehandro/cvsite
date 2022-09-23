@@ -13,10 +13,10 @@ interface Props {
   header: string;
   title: string;
   list: string[];
-  onclick?: () => void;
+  link: string;
 }
 
-const CaseLandingLayout = ({ header, title, list, onclick }: Props) => {
+const CaseLandingLayout = ({ header, title, list, link }: Props) => {
   // Render
   const renderList = list?.map((item, i) => (
     <ListItem key={i} lineHeight={1.8}>
@@ -55,6 +55,7 @@ const CaseLandingLayout = ({ header, title, list, onclick }: Props) => {
         bgColor={DEFAULT_STYLES.whiteColor}
         color={DEFAULT_STYLES.darkColor}
         title={'View project'}
+        link={link}
       />
     </VStack>
   );

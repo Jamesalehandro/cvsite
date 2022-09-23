@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import { Button } from '@chakra-ui/react';
+import { Button, Spacer } from '@chakra-ui/react';
 import { IconType } from 'react-icons';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { ReactNode } from 'react';
 
 interface Props {
   width?: string;
@@ -10,9 +11,10 @@ interface Props {
   bgColor: string;
   title: string;
   border?: string;
-  leftIcon?: IconType;
+  leftIcon?: ReactNode;
   link?: string;
   internalLink?: string;
+  onClick?: () => void;
 }
 
 const ButtonComp = ({
@@ -25,6 +27,7 @@ const ButtonComp = ({
   leftIcon,
   link,
   internalLink,
+  onClick,
 }: Props) => {
   return (
     <>
@@ -38,12 +41,13 @@ const ButtonComp = ({
             borderRadius={'50px'}
             transition={'all linear 250ms'}
             border={border}
-            fontSize={20}
+            fontSize={18}
             fontWeight={DEFAULT_STYLES.boldFontWeight}
-            lineHeight={'36px'}
             textAlign={'center'}
+            display={'flex'}
+            gap={5}
+            onClick={onClick}
             zIndex={1000}
-            // leftIcon={leftIcon}
             _hover={{
               bgColor: bgColor,
             }}
@@ -52,11 +56,14 @@ const ButtonComp = ({
               transform: 'scale(0.989)',
             }}
           >
-            {title}
+            <>
+              {leftIcon && leftIcon}
+              {title}
+            </>
           </Button>
         </Link>
       ) : link ? (
-        <a href={link}>
+        <a href={link} target={'_blank'} rel="noopener noreferrer">
           <Button
             minWidth={width ?? '223px'}
             height={height ?? '64px'}
@@ -65,12 +72,13 @@ const ButtonComp = ({
             borderRadius={'50px'}
             transition={'all linear 250ms'}
             border={border}
-            fontSize={20}
+            fontSize={18}
             fontWeight={DEFAULT_STYLES.boldFontWeight}
-            lineHeight={'36px'}
             textAlign={'center'}
+            onClick={onClick}
+            display={'flex'}
+            gap={5}
             zIndex={1000}
-            // leftIcon={leftIcon}
             _hover={{
               bgColor: bgColor,
             }}
@@ -79,7 +87,10 @@ const ButtonComp = ({
               transform: 'scale(0.989)',
             }}
           >
-            {title}
+            <>
+              {leftIcon && leftIcon}
+              {title}
+            </>
           </Button>
         </a>
       ) : (
@@ -91,12 +102,13 @@ const ButtonComp = ({
           borderRadius={'50px'}
           transition={'all linear 250ms'}
           border={border}
-          fontSize={20}
+          fontSize={18}
           fontWeight={DEFAULT_STYLES.boldFontWeight}
-          lineHeight={'36px'}
+          onClick={onClick}
           textAlign={'center'}
           zIndex={1000}
-          // leftIcon={leftIcon}
+          display={'flex'}
+          gap={5}
           _hover={{
             bgColor: bgColor,
           }}
@@ -105,7 +117,10 @@ const ButtonComp = ({
             transform: 'scale(0.989)',
           }}
         >
-          {title}
+          <>
+            {leftIcon && leftIcon}
+            {title}
+          </>
         </Button>
       )}
     </>

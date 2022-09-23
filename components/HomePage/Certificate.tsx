@@ -6,9 +6,9 @@ const Certificate = () => {
   return (
     <Flex
       width={DEFAULT_STYLES.fullWidth}
+      bg={DEFAULT_STYLES.darkColor}
       align={'center'}
       justify={'center'}
-      bg={DEFAULT_STYLES.darkColor}
     >
       <Flex
         w={DEFAULT_STYLES.containerWidth}

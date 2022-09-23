@@ -13,6 +13,6 @@ export const DEFAULT_STYLES = {
   smallTextFontSize: 14,
   headerFontSize: 28,
   darkColor: '#121212',
-  fontFamily: " 'Poppins', sans-serif",
+  fontFamily: " 'Orbitron', sans-serif",
   bodyHeaderFontSize: 20,
 };

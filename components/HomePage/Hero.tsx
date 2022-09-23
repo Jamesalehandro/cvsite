@@ -4,7 +4,15 @@ import Image from 'next/future/image';
 import ButtonComp from '../Button/Button';
 import resumeIcon from '../../assets/media/img/onlineresume.png';
 import tree from '../../assets/media/img/tree.png';
-import { Box, Flex, Heading, HStack, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Grid,
+  Heading,
+  HStack,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
 import { cvRoutes } from '../../utils/routes';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
 
@@ -17,7 +25,7 @@ const Hero = () => {
         ]}
       />
 
-      <Flex
+      <Grid
         w={DEFAULT_STYLES.containerWidth}
         justifyContent={'center'}
         minH={'400px'}
@@ -26,13 +34,16 @@ const Hero = () => {
         zIndex={2}
         justifySelf={'center'}
         alignSelf={'center'}
+        alignItems={'center'}
+        justifyItems={'center'}
+        templateColumns={'repeat(2,1fr)'}
       >
         <Stack
           color={DEFAULT_STYLES.whiteColor}
           fontWeight={DEFAULT_STYLES.boldFontWeight}
           justifyContent={'center'}
           gap={'35px'}
-          flex={1}
+          minH={'500px'}
         >
           <Heading
             fontSize={24}
@@ -81,16 +92,16 @@ const Hero = () => {
         </Stack>
 
         <Stack
-          flex={1}
           position={'relative'}
           justifyContent={'flex-end'}
           align={'center'}
+          minH={'400px'}
         >
           <Box
             width={'600px'}
             height={'400px'}
             position={'absolute'}
-            top={{ base: 0, xl: '-90px', '2xl': '-70px' }}
+            top={{ base: 0, xl: '-75px', '2xl': '-70px' }}
             userSelect={'none'}
           >
             <Image
@@ -107,13 +118,12 @@ const Hero = () => {
           <Flex
             color={DEFAULT_STYLES.whiteColor}
             zIndex={2}
-            gap={2}
             alignItems={'flex-start'}
           >
             <Text
               w={{
                 base: DEFAULT_STYLES.fullWidth,
-                xl: '400px',
+                xl: '500px',
                 '2xl': '550px',
               }}
               fontSize={18}
@@ -123,11 +133,11 @@ const Hero = () => {
             >
               I am a front-end developer specialized in building and
               occasionally designing exceptional digital experiences. Currently,
-              I am focused on building accessible and responsive web pages
+              I am focused on building accessible and responsive web pages.
             </Text>
           </Flex>
         </Stack>
-      </Flex>
+      </Grid>
     </HeroLayout>
   );
 };
