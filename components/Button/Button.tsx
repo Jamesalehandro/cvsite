@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { Button, Spacer } from '@chakra-ui/react';
-import { IconType } from 'react-icons';
+import { Button } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
 import { ReactNode } from 'react';
 

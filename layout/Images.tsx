@@ -10,16 +10,16 @@ const Images = ({ centerIcon }: Props) => {
     <Flex
       position={'relative'}
       align={'center'}
-      zIndex={3000}
+      zIndex={3}
       width={{ base: '100%', xl: '600px' }}
       height={'500px'}
       borderRadius={'5px'}
       overflow={'hidden'}
-      shadow={'xl'}
+      shadow={'2xl'}
     >
       <Image
         src={centerIcon}
-        alt={'Nestuge'}
+        alt={'Chigbo James'}
         quality={100}
         fill
         style={{

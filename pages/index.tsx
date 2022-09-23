@@ -3,8 +3,8 @@ import Certificate from '../components/HomePage/Certificate';
 import Nestuge from '../components/HomePage/Nestuge';
 import Dyserf from '../components/HomePage/Dyserf';
 import NetFlix from '../components/HomePage/NetFlix';
-import { DEFAULT_STYLES } from '../styles/customStyles';
 import Footer from '../components/Footer/Footer';
+import { DEFAULT_STYLES } from '../styles/customStyles';
 
 const Home = () => {
   return (
