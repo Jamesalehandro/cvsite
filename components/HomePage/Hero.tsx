@@ -4,16 +4,7 @@ import Image from 'next/future/image';
 import ButtonComp from '../Button/Button';
 import resumeIcon from '../../assets/media/img/onlineresume.png';
 import tree from '../../assets/media/img/tree.png';
-import {
-  Box,
-  Flex,
-  Grid,
-  Heading,
-  HStack,
-  Stack,
-  Text,
-} from '@chakra-ui/react';
-import { cvRoutes } from '../../utils/routes';
+import { Box, Grid, Heading, HStack, Stack, Text } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
 
 const Hero = () => {
@@ -36,7 +27,7 @@ const Hero = () => {
         alignSelf={'center'}
         alignItems={'center'}
         justifyItems={'center'}
-        templateColumns={'repeat(2,1fr)'}
+        templateColumns={{ base: 'repeat(1,1fr)', xl: 'repeat(2,1fr)' }}
       >
         <Stack
           color={DEFAULT_STYLES.whiteColor}
@@ -73,7 +64,12 @@ const Hero = () => {
             Front End Developer
           </Heading>
 
-          <HStack pt={'48px'} align={'center'} gap={3}>
+          <HStack
+            pt={'48px'}
+            align={'center'}
+            gap={3}
+            flexDirection={{ base: 'column', xl: 'row' }}
+          >
             <ButtonComp
               bgColor={DEFAULT_STYLES.whiteColor}
               color={DEFAULT_STYLES.darkColor}
@@ -97,9 +93,10 @@ const Hero = () => {
           justifyContent={'flex-end'}
           align={'center'}
           minH={'400px'}
+          px={{ base: 4, xl: 0 }}
         >
           <Box
-            width={'600px'}
+            width={{ base: DEFAULT_STYLES.fullWidth, md: '600px' }}
             height={'400px'}
             position={'absolute'}
             top={{ base: 0, xl: '-75px', '2xl': '-70px' }}
@@ -116,27 +113,23 @@ const Hero = () => {
             />
           </Box>
 
-          <Flex
-            color={DEFAULT_STYLES.whiteColor}
+          <Text
+            w={{
+              base: DEFAULT_STYLES.fullWidth,
+              md: '500px',
+              '2xl': '550px',
+            }}
+            fontSize={{ base: 14, xl: 18 }}
+            textAlign={'justify'}
+            whiteSpace={'pre-wrap'}
+            lineHeight={1.7}
             zIndex={2}
-            alignItems={'flex-start'}
+            color={DEFAULT_STYLES.whiteColor}
           >
-            <Text
-              w={{
-                base: DEFAULT_STYLES.fullWidth,
-                xl: '500px',
-                '2xl': '550px',
-              }}
-              fontSize={18}
-              textAlign={'justify'}
-              whiteSpace={'pre-wrap'}
-              lineHeight={1.7}
-            >
-              I am a front-end developer specialized in building and
-              occasionally designing exceptional digital experiences. Currently,
-              I am focused on building accessible and responsive web pages.
-            </Text>
-          </Flex>
+            I am a front-end developer specialized in building and occasionally
+            designing exceptional digital experiences. Currently, I am focused
+            on building accessible and responsive web pages.
+          </Text>
         </Stack>
       </Grid>
     </HeroLayout>

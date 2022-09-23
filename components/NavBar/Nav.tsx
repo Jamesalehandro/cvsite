@@ -40,9 +40,9 @@ const Nav = ({ navLink }: Prop) => {
 
   return (
     <Flex
-      zIndex={1}
       w={DEFAULT_STYLES.fullWidth}
       justifyContent={'flex-end'}
+      zIndex={1}
       pr={{ base: '20px', xl: '50px' }}
       pt={5}
     >

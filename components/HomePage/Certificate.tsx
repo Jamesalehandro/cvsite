@@ -16,9 +16,15 @@ const Certificate = () => {
         justifyContent={'center'}
         align={'center'}
         color={DEFAULT_STYLES.whiteColor}
-        gap={20}
+        gap={{ base: 0, lg: 20 }}
+        flexDirection={{ base: 'column', lg: 'row' }}
+        py={{ base: 10, lg: 0 }}
       >
-        <Text width={'480px'} fontWeight={DEFAULT_STYLES.boldFontWeight}>
+        <Text
+          width={{ base: DEFAULT_STYLES.fullWidth, md: '480px' }}
+          fontWeight={DEFAULT_STYLES.boldFontWeight}
+          textAlign={{ base: 'center', lg: 'left' }}
+        >
           Professionally certified by Side Hustle Internship. <br />{' '}
           <span
             style={{

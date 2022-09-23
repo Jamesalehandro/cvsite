@@ -4,6 +4,7 @@ import { Grid, Heading, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../styles/customStyles';
 import { customBg } from '../store';
 import { LayoutProps } from '../models';
+import { cvRoutes } from '../utils/routes';
 
 interface Props extends LayoutProps {
   header?: boolean;
@@ -46,21 +47,22 @@ const ProjectLayout = (props: Props) => {
         w={DEFAULT_STYLES.containerWidth}
         minH={'700px'}
         color={DEFAULT_STYLES.whiteColor}
-        zIndex={2}
-        gap={20}
+        gap={10}
         gridTemplateColumns={'repeat(2,1fr)'}
         alignItems={'center'}
         justifyItems={'center'}
       >
         {props.children}
       </Grid>
+
       {props.footer && (
         <ButtonComp
           bgColor={'transparent'}
           color={DEFAULT_STYLES.whiteColor}
-          title={'See all case studies'}
+          title={'See all projects'}
           border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
           width={'300px'}
+          internalLink={cvRoutes.project}
         />
       )}
     </VStack>
