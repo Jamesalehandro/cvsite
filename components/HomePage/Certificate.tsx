@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
 
@@ -12,18 +12,19 @@ const Certificate = () => {
     >
       <Flex
         w={DEFAULT_STYLES.containerWidth}
+        color={DEFAULT_STYLES.whiteColor}
         minH={'400px'}
         justifyContent={'center'}
         align={'center'}
-        color={DEFAULT_STYLES.whiteColor}
-        gap={{ base: 0, lg: 20 }}
-        flexDirection={{ base: 'column', lg: 'row' }}
+        gap={{ base: 4, lg: 20 }}
+        flexDirection={{ base: 'column', md: 'row' }}
         py={{ base: 10, lg: 0 }}
+        px={{ base: 5, xl: 0 }}
       >
         <Text
           width={{ base: DEFAULT_STYLES.fullWidth, md: '480px' }}
           fontWeight={DEFAULT_STYLES.boldFontWeight}
-          textAlign={{ base: 'center', lg: 'left' }}
+          textAlign={{ base: 'center', md: 'left' }}
         >
           Professionally certified by Side Hustle Internship. <br />{' '}
           <span
@@ -47,15 +48,20 @@ const Certificate = () => {
           </span>
         </Text>
 
-        <Box width={'340px'} height={'340px'} position={'relative'}>
+        <Box
+          width={{ base: DEFAULT_STYLES.fullWidth, md: '340px' }}
+          height={'340px'}
+          position={'relative'}
+        >
           <Image
             src={
               'https://terrahq.nyc3.cdn.digitaloceanspaces.com/certificates/44564AHQC22.png'
             }
             alt="certificate"
-            layout={'fill'}
-            objectFit={'contain'}
+            fill
             priority
+            quality={100}
+            style={{ objectFit: 'contain' }}
           />
         </Box>
       </Flex>

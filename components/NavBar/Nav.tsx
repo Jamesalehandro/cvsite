@@ -13,13 +13,11 @@ const Nav = ({ navLink }: Prop) => {
   const renderNav = navLink.map((nav, i) => {
     return (
       <LinkBox
-        key={i}
+        key={`${nav.title}-${i}`}
         color={DEFAULT_STYLES.whiteColor}
-        minWidth={'164px'}
         minH={'28px'}
         fontWeight={DEFAULT_STYLES.boldFontWeight}
         fontSize={DEFAULT_STYLES.smallTextFontSize}
-        lineHeight={'30px'}
         role={'group'}
       >
         <Flex
@@ -31,7 +29,7 @@ const Nav = ({ navLink }: Prop) => {
         >
           <Link href={nav.path}>{nav.title}</Link>
           {nav.icon && (
-            <Image src={nav.icon} alt={nav.title} priority quality={100} />
+            <Image src={nav.icon} alt={'Nav'} priority quality={100} />
           )}
         </Flex>
       </LinkBox>
@@ -42,9 +40,11 @@ const Nav = ({ navLink }: Prop) => {
     <Flex
       w={DEFAULT_STYLES.fullWidth}
       justifyContent={'flex-end'}
+      align={'center'}
       zIndex={1}
-      pr={{ base: '20px', xl: '50px' }}
-      pt={5}
+      pr={{ base: 5, xl: '50px' }}
+      py={2}
+      gap={5}
     >
       {renderNav}
     </Flex>

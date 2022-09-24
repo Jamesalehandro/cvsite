@@ -6,13 +6,14 @@ import resumeIcon from '../../assets/media/img/onlineresume.png';
 import tree from '../../assets/media/img/tree.png';
 import { Box, Grid, Heading, HStack, Stack, Text } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { cvRoutes } from '../../utils/routes';
 
 const Hero = () => {
   return (
     <HeroLayout>
       <Nav
         navLink={[
-          { path: '/resume', title: 'Online resume', icon: resumeIcon },
+          { path: cvRoutes.resume, title: 'Online resume', icon: resumeIcon },
         ]}
       />
 
@@ -21,19 +22,20 @@ const Hero = () => {
         justifyContent={'center'}
         minH={'400px'}
         py={{ base: '50px', xl: '140px', '2xl': '180px' }}
-        gap={{ base: '30px', xl: '50px' }}
-        zIndex={2}
+        px={{ base: 10, xl: 0 }}
+        gap={{ base: '30px', lg: 0, xl: '50px' }}
+        zIndex={5}
         justifySelf={'center'}
         alignSelf={'center'}
         alignItems={'center'}
         justifyItems={'center'}
-        templateColumns={{ base: 'repeat(1,1fr)', xl: 'repeat(2,1fr)' }}
+        templateColumns={{ base: 'repeat(1,1fr)', lg: 'repeat(2,1fr)' }}
       >
         <Stack
           color={DEFAULT_STYLES.whiteColor}
           fontWeight={DEFAULT_STYLES.boldFontWeight}
           justifyContent={'center'}
-          gap={'35px'}
+          gap={{ base: 0, xl: '35px' }}
           minH={'500px'}
         >
           <Heading
@@ -54,7 +56,7 @@ const Hero = () => {
 
           <Heading
             fontSize={{
-              base: 25,
+              base: 20,
               xl: 25,
               '2xl': DEFAULT_STYLES.headerFontSize,
             }}
@@ -64,11 +66,35 @@ const Hero = () => {
             Front End Developer
           </Heading>
 
+          <Text
+            w={{
+              base: DEFAULT_STYLES.fullWidth,
+              md: '500px',
+              '2xl': '550px',
+            }}
+            fontSize={{ base: 13, xl: 18 }}
+            textAlign={'left'}
+            whiteSpace={'pre-wrap'}
+            lineHeight={2}
+            color={DEFAULT_STYLES.whiteColor}
+            display={{ base: 'block', lg: 'none' }}
+            fontWeight={400}
+          >
+            I am a front-end developer specialized in building and occasionally
+            designing exceptional digital experiences. Currently, I am focused
+            on building accessible and responsive web pages.
+          </Text>
+
           <HStack
             pt={'48px'}
             align={'center'}
             gap={3}
-            flexDirection={{ base: 'column', xl: 'row' }}
+            flexDirection={{
+              base: 'column',
+              md: 'row',
+              lg: 'column',
+              xl: 'row',
+            }}
           >
             <ButtonComp
               bgColor={DEFAULT_STYLES.whiteColor}
@@ -94,9 +120,10 @@ const Hero = () => {
           align={'center'}
           minH={'400px'}
           px={{ base: 4, xl: 0 }}
+          display={{ base: 'none', lg: 'flex' }}
         >
           <Box
-            width={{ base: DEFAULT_STYLES.fullWidth, md: '600px' }}
+            width={{ base: DEFAULT_STYLES.fullWidth, lg: '580px', xl: '600px' }}
             height={'400px'}
             position={'absolute'}
             top={{ base: 0, xl: '-75px', '2xl': '-70px' }}

@@ -9,7 +9,7 @@ const HeroLayout = ({ children }: LayoutProps) => {
   return (
     <VStack
       width={DEFAULT_STYLES.fullWidth}
-      minHeight={DEFAULT_STYLES.fullHeight}
+      minHeight={{ base: '600px', xl: '800px' }}
       position={'relative'}
     >
       <Image
