@@ -29,11 +29,16 @@ const ProjectListComponent = ({ header, title, list, link }: Props) => {
   ));
 
   return (
-    <VStack align={'flex-start'} width={'456px'} gap={2} zIndex={3000}>
+    <VStack
+      align={'flex-start'}
+      width={{ base: DEFAULT_STYLES.fullWidth, lg: '456px' }}
+      gap={2}
+      zIndex={3000}
+    >
       <Heading
         color={DEFAULT_STYLES.whiteColor}
         fontWeight={DEFAULT_STYLES.boldFontWeight}
-        fontSize={DEFAULT_STYLES.headerFontSize}
+        fontSize={{ base: 20, xl: DEFAULT_STYLES.headerFontSize }}
         fontFamily={DEFAULT_STYLES.fontFamily}
         textAlign={'center'}
         textTransform={'capitalize'}
@@ -41,7 +46,11 @@ const ProjectListComponent = ({ header, title, list, link }: Props) => {
         {header}
       </Heading>
 
-      <Text color={DEFAULT_STYLES.whiteColor} lineHeight={1.8}>
+      <Text
+        color={DEFAULT_STYLES.whiteColor}
+        fontSize={{ base: DEFAULT_STYLES.smallTextFontSize, xl: 16 }}
+        lineHeight={1.8}
+      >
         {title}
       </Text>
 

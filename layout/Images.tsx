@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/future/image';
 import { Flex } from '@chakra-ui/react';
+import { DEFAULT_STYLES } from '../styles/customStyles';
 
 type Props = {
   centerIcon: StaticImageData;
@@ -11,8 +12,8 @@ const Images = ({ centerIcon }: Props) => {
       position={'relative'}
       align={'center'}
       zIndex={3}
-      width={{ base: '100%', xl: '600px' }}
-      height={'500px'}
+      width={{ base: DEFAULT_STYLES.fullWidth, xl: '600px' }}
+      height={{ base: '400px', lg: '500px' }}
       borderRadius={'5px'}
       overflow={'hidden'}
       shadow={'2xl'}

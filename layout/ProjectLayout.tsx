@@ -1,6 +1,6 @@
 import ButtonComp from '../components/Button/Button';
 import Image from 'next/future/image';
-import { Grid, Heading, VStack } from '@chakra-ui/react';
+import { Box, Grid, Heading, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../styles/customStyles';
 import { customBg } from '../store';
 import { LayoutProps } from '../models';
@@ -20,6 +20,8 @@ const ProjectLayout = (props: Props) => {
       position={'relative'}
       pt={5}
       pb={10}
+      gap={10}
+      px={{ base: 5, xl: 0 }}
     >
       <Image
         src={customBg}
@@ -34,7 +36,7 @@ const ProjectLayout = (props: Props) => {
           color={DEFAULT_STYLES.whiteColor}
           fontWeight={DEFAULT_STYLES.mediumFontWeight}
           fontFamily={DEFAULT_STYLES.fontFamily}
-          fontSize={24}
+          fontSize={{ base: 20, lg: 24 }}
           lineHeight={'36px'}
           textAlign={'center'}
           zIndex={2}
@@ -45,10 +47,10 @@ const ProjectLayout = (props: Props) => {
 
       <Grid
         w={DEFAULT_STYLES.containerWidth}
-        minH={'700px'}
+        minH={{ base: '600px', lg: '700px' }}
         color={DEFAULT_STYLES.whiteColor}
         gap={10}
-        gridTemplateColumns={'repeat(2,1fr)'}
+        templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
         alignItems={'center'}
         justifyItems={'center'}
       >
@@ -56,14 +58,16 @@ const ProjectLayout = (props: Props) => {
       </Grid>
 
       {props.footer && (
-        <ButtonComp
-          bgColor={'transparent'}
-          color={DEFAULT_STYLES.whiteColor}
-          title={'See all projects'}
-          border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
-          width={'300px'}
-          internalLink={cvRoutes.project}
-        />
+        <Box width={{ base: DEFAULT_STYLES.fullWidth, xl: '300px' }}>
+          <ButtonComp
+            bgColor={'transparent'}
+            color={DEFAULT_STYLES.whiteColor}
+            title={'See all projects'}
+            border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
+            width={DEFAULT_STYLES.fullWidth}
+            internalLink={cvRoutes.project}
+          />
+        </Box>
       )}
     </VStack>
   );
