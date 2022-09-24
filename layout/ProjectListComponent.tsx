@@ -18,7 +18,7 @@ interface Props {
 
 const ProjectListComponent = ({ header, title, list, link }: Props) => {
   // Render
-  const renderList = list?.map((item, i) => (
+  const renderList = list.map((item, i) => (
     <ListItem
       key={i}
       lineHeight={1.8}

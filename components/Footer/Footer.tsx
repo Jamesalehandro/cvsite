@@ -35,7 +35,7 @@ const Footer = () => {
       >
         <Text
           minHeight={'36px'}
-          fontSize={DEFAULT_STYLES.smallTextFontSize + 5}
+          fontSize={DEFAULT_STYLES.smallTextFontSize}
           lineHeight={'36px'}
           textAlign={'center'}
           color={DEFAULT_STYLES.whiteColor}

@@ -2,18 +2,18 @@ import HeroLayout from '../../layout/HeroLayout';
 import Nav from '../NavBar/Nav';
 import Image from 'next/future/image';
 import ButtonComp from '../Button/Button';
-import resumeIcon from '../../assets/media/img/onlineresume.png';
 import tree from '../../assets/media/img/tree.png';
 import { Box, Grid, Heading, HStack, Stack, Text } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
 import { cvRoutes } from '../../utils/routes';
+import { resumeImg } from '../../store';
 
 const Hero = () => {
   return (
     <HeroLayout>
       <Nav
         navLink={[
-          { path: cvRoutes.resume, title: 'Online resume', icon: resumeIcon },
+          { path: cvRoutes.resume, title: 'Online resume', icon: resumeImg },
         ]}
       />
 
@@ -39,7 +39,7 @@ const Hero = () => {
           minH={'500px'}
         >
           <Heading
-            fontSize={24}
+            fontSize={{ base: 20, xl: 24 }}
             fontFamily={DEFAULT_STYLES.fontFamily}
             lineHeight={'36px'}
           >

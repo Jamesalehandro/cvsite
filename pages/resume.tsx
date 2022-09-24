@@ -1,12 +1,14 @@
+import ResumeHero from '../components/Resume/ResumeHero';
+import Section1 from '../components/Resume/Section1';
+import Section2 from '../components/Resume/Section2';
+
 const Resume = () => {
   return (
-    <div
-      style={{
-        flex: 1,
-      }}
-    >
-      Resume
-    </div>
+    <>
+      <ResumeHero />
+      <Section1 />
+      <Section2 />
+    </>
   );
 };
 
