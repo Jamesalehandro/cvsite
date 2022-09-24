@@ -1,12 +1,12 @@
 import Images from '../../layout/Images';
 import ProjectListComponent from '../../layout/ProjectListComponent';
-import leftIcon from '../../assets/media/img/leftnestuge.jpeg';
+import centerIcon from '../../assets/media/img/leftnestuge.jpeg';
 import ProjectLayout from '../../layout/ProjectLayout';
 
 const Nestuge = () => {
   return (
     <ProjectLayout>
-      <Images centerIcon={leftIcon} />
+      <Images centerIcon={centerIcon} />
 
       <ProjectListComponent
         header={'Nestuge'}

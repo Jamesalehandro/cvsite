@@ -1,7 +1,13 @@
-import React from 'react';
-
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <div
+      style={{
+        flex: 1,
+      }}
+    >
+      Projects
+    </div>
+  );
 };
 
 export default Projects;

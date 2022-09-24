@@ -58,7 +58,7 @@ const ProjectLayout = (props: Props) => {
       </Grid>
 
       {props.footer && (
-        <Box width={{ base: DEFAULT_STYLES.fullWidth, xl: '300px' }}>
+        <Box width={{ base: DEFAULT_STYLES.fullWidth, md: '300px' }}>
           <ButtonComp
             bgColor={'transparent'}
             color={DEFAULT_STYLES.whiteColor}

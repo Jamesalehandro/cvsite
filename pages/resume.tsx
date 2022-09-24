@@ -1,7 +1,13 @@
-import React from 'react';
-
 const Resume = () => {
-  return <div>Resume</div>;
+  return (
+    <div
+      style={{
+        flex: 1,
+      }}
+    >
+      Resume
+    </div>
+  );
 };
 
 export default Resume;

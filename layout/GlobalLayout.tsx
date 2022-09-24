@@ -1,5 +1,7 @@
 import Head from 'next/head';
+import Footer from '../components/Footer/Footer';
 import { LayoutProps } from '../models/LayoutModels';
+import { DEFAULT_STYLES } from '../styles/customStyles';
 
 const GlobalLayout = ({ children }: LayoutProps) => {
   return (
@@ -21,8 +23,17 @@ const GlobalLayout = ({ children }: LayoutProps) => {
 
         <title>Chigbo Ifeanyi James - Front End Developer</title>
       </Head>
-
-      <>{children}</>
+      <div
+        style={{
+          width: DEFAULT_STYLES.fullWidth,
+          minHeight: DEFAULT_STYLES.fullHeight,
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <>{children}</>
+        <Footer />
+      </div>
     </>
   );
 };

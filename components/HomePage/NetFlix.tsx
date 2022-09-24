@@ -1,6 +1,6 @@
 import Images from '../../layout/Images';
 import ProjectListComponent from '../../layout/ProjectListComponent';
-import leftIcon from '../../assets/media/img/netflix.jpeg';
+import centerIcon from '../../assets/media/img/netflix.jpeg';
 import ProjectLayout from '../../layout/ProjectLayout';
 
 const NetFlix = () => {
@@ -21,7 +21,7 @@ const NetFlix = () => {
         link={'https://netflixbyjames.netlify.app/'}
       />
 
-      <Images centerIcon={leftIcon} />
+      <Images centerIcon={centerIcon} />
     </ProjectLayout>
   );
 };

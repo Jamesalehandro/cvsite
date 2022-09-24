@@ -1,7 +1,7 @@
 import Image from 'next/future/image';
 import footerbg from '../../assets/media/img/footerbg.png';
 import ButtonComp from '../Button/Button';
-import { Flex, Stack, Text, VStack } from '@chakra-ui/react';
+import { Box, Flex, HStack, Stack, Text, VStack } from '@chakra-ui/react';
 import { FaTwitter } from 'react-icons/fa';
 import { AiFillMail } from 'react-icons/ai';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
@@ -14,16 +14,25 @@ const Footer = () => {
         align={'center'}
         justifyContent={'center'}
       >
-        <ButtonComp
-          width={'300px'}
-          bgColor={'transparent'}
-          color={DEFAULT_STYLES.whiteColor}
-          title={'Back to top'}
-          onClick={() => window.scrollTo(0, 0)}
-        />
+        <HStack w={{ base: DEFAULT_STYLES.fullWidth, md: '300px' }}>
+          <ButtonComp
+            width={DEFAULT_STYLES.fullWidth}
+            bgColor={'transparent'}
+            color={DEFAULT_STYLES.whiteColor}
+            title={'Back to top'}
+            onClick={() => window.scrollTo(0, 0)}
+          />
+        </HStack>
       </Flex>
 
-      <Stack gap={4} align={'center'} pt={'70px'} pb={'64px'}>
+      <Stack
+        gap={4}
+        align={'center'}
+        pt={'70px'}
+        pb={'64px'}
+        width={DEFAULT_STYLES.fullWidth}
+        px={4}
+      >
         <Text
           minHeight={'36px'}
           fontSize={DEFAULT_STYLES.smallTextFontSize + 5}
@@ -34,25 +43,29 @@ const Footer = () => {
           Connect with me
         </Text>
 
-        <ButtonComp
-          width={'300px'}
-          bgColor={'transparent'}
-          color={DEFAULT_STYLES.whiteColor}
-          title={'Twitter'}
-          border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
-          leftIcon={<FaTwitter />}
-          link={'https://www.twitter.com/Chigbo_James'}
-        />
+        <Box w={{ base: '60%', md: '250px' }}>
+          <ButtonComp
+            bgColor={'transparent'}
+            color={DEFAULT_STYLES.whiteColor}
+            title={'Twitter'}
+            border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
+            leftIcon={<FaTwitter />}
+            link={'https://www.twitter.com/Chigbo_James'}
+            width={DEFAULT_STYLES.fullWidth}
+          />
+        </Box>
 
-        <ButtonComp
-          width={'319px'}
-          bgColor={'transparent'}
-          border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
-          color={DEFAULT_STYLES.whiteColor}
-          title={'Send an email'}
-          leftIcon={<AiFillMail color={DEFAULT_STYLES.whiteColor} />}
-          link={'mailto:jamesalehandro@gmail.com'}
-        />
+        <Box w={{ base: '70%', md: '319px' }}>
+          <ButtonComp
+            bgColor={'transparent'}
+            border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
+            color={DEFAULT_STYLES.whiteColor}
+            title={'Send an email'}
+            leftIcon={<AiFillMail color={DEFAULT_STYLES.whiteColor} />}
+            width={DEFAULT_STYLES.fullWidth}
+            link={'mailto:jamesalehandro@gmail.com'}
+          />
+        </Box>
       </Stack>
 
       <Flex
@@ -62,6 +75,7 @@ const Footer = () => {
         justifyContent={'center'}
         color={DEFAULT_STYLES.whiteColor}
         position={'relative'}
+        px={4}
       >
         <Image
           src={footerbg}
@@ -72,7 +86,7 @@ const Footer = () => {
         />
         <Text
           fontSize={DEFAULT_STYLES.smallTextFontSize}
-          minW={'308px'}
+          minW={{ base: DEFAULT_STYLES.fullWidth, md: '308px' }}
           minHeight={'24px'}
           lineHeight={'24px'}
           textAlign={'center'}

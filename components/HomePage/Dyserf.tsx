@@ -1,6 +1,6 @@
 import Images from '../../layout/Images';
 import ProjectListComponent from '../../layout/ProjectListComponent';
-import leftIcon from '../../assets/media/img/dyserf.png';
+import centerIcon from '../../assets/media/img/dyserf.png';
 import ProjectLayout from '../../layout/ProjectLayout';
 
 const Dyserf = () => {
@@ -21,7 +21,7 @@ const Dyserf = () => {
         link={'https://dyserf.vercel.app/'}
       />
 
-      <Images centerIcon={leftIcon} />
+      <Images centerIcon={centerIcon} />
     </ProjectLayout>
   );
 };
