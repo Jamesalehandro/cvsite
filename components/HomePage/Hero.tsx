@@ -29,7 +29,11 @@ const Hero = () => {
         alignSelf={'center'}
         alignItems={'center'}
         justifyItems={'center'}
-        templateColumns={{ base: 'repeat(1,1fr)', lg: 'repeat(2,1fr)' }}
+        templateColumns={{
+          base: 'repeat(1,1fr)',
+          lg: 'repeat(2,1fr)',
+          xl: 'repeat(2,1fr)',
+        }}
       >
         <Stack
           color={DEFAULT_STYLES.whiteColor}
@@ -120,7 +124,7 @@ const Hero = () => {
           align={'center'}
           minH={'400px'}
           px={{ base: 4, xl: 0 }}
-          display={{ base: 'none', lg: 'flex' }}
+          display={{ base: 'none', lg: 'flex', xl: 'flex' }}
         >
           <Box
             width={{ base: DEFAULT_STYLES.fullWidth, lg: '580px', xl: '600px' }}
