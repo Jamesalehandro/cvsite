@@ -23,7 +23,7 @@ const ResumeHero = () => {
         alignItems={'flex-start'}
         color={DEFAULT_STYLES.whiteColor}
         py={{ base: 10, lg: '100px' }}
-        gap={'23px'}
+        gap={'30px'}
         px={{ base: 4, xl: 0 }}
       >
         <Heading
