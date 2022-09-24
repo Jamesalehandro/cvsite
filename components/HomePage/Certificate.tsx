@@ -17,7 +17,7 @@ const Certificate = () => {
         justifyContent={'center'}
         align={'center'}
         gap={{ base: 4, lg: 20 }}
-        flexDirection={{ base: 'column', md: 'row' }}
+        flexDirection={{ base: 'column', md: 'row', xl: 'row' }}
         py={{ base: 10, lg: 0 }}
         px={{ base: 5, xl: 0 }}
       >

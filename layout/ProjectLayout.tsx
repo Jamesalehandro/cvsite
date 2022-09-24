@@ -50,7 +50,12 @@ const ProjectLayout = (props: Props) => {
         minH={{ base: '600px', lg: '700px' }}
         color={DEFAULT_STYLES.whiteColor}
         gap={10}
-        templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
+        templateColumns={{
+          base: 'repeat(1,1fr)',
+          md: 'repeat(2,1fr)',
+          lg: 'repeat(2,1fr)',
+          xl: 'repeat(2,1fr)',
+        }}
         alignItems={'center'}
         justifyItems={'center'}
       >

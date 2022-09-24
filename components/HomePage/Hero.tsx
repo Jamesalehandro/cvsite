@@ -31,6 +31,7 @@ const Hero = () => {
         justifyItems={'center'}
         templateColumns={{
           base: 'repeat(1,1fr)',
+          md: 'repeat(2,1fr)',
           lg: 'repeat(2,1fr)',
           xl: 'repeat(2,1fr)',
         }}
