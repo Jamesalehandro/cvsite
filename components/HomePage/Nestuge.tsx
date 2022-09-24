@@ -6,7 +6,7 @@ import { cvRoutes } from '../../utils/routes';
 
 const Nestuge = () => {
   return (
-    <ProjectLayout>
+    <ProjectLayout header>
       <Images centerIcon={centerIcon} />
 
       <ProjectListComponent

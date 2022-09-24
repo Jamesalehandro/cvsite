@@ -5,7 +5,7 @@ import ProjectLayout from '../../layout/ProjectLayout';
 
 const Dyserf = () => {
   return (
-    <ProjectLayout header>
+    <ProjectLayout>
       <ProjectListComponent
         header={'DYSERF'}
         title={
