@@ -3,16 +3,24 @@ import Certificate from '../components/HomePage/Certificate';
 import Nestuge from '../components/HomePage/Nestuge';
 import Dyserf from '../components/HomePage/Dyserf';
 import NetFlix from '../components/HomePage/NetFlix';
+import { DEFAULT_STYLES } from '../styles/customStyles';
 
 const Home = () => {
   return (
-    <>
+    <div
+      style={{
+        width: DEFAULT_STYLES.fullWidth,
+        minHeight: DEFAULT_STYLES.fullHeight,
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+    >
       <Hero />
       <Certificate />
       <Dyserf />
       <Nestuge />
       <NetFlix />
-    </>
+    </div>
   );
 };
 
