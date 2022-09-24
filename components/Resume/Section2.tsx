@@ -28,10 +28,9 @@ const Section2 = () => {
         color={DEFAULT_STYLES.whiteColor}
         gap={10}
         templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
-        justifyItems={'center'}
         zIndex={5}
       >
-        <Stack>
+        <Stack alignItems={'flex-start'}>
           <ItemListArray
             header={'Volunteer and service positions'}
             list={[
