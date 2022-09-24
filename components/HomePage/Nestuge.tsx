@@ -2,6 +2,7 @@ import Images from '../../layout/Images';
 import ProjectListComponent from '../../layout/ProjectListComponent';
 import centerIcon from '../../assets/media/img/leftnestuge.jpeg';
 import ProjectLayout from '../../layout/ProjectLayout';
+import { cvRoutes } from '../../utils/routes';
 
 const Nestuge = () => {
   return (
@@ -20,7 +21,7 @@ const Nestuge = () => {
           'Role: Front end Developer',
           'Tools: ReactJs(NextJs),Firebase, AOS,Chakra ui',
         ]}
-        link={'https://www.nestuge.com/'}
+        link={cvRoutes.nestuge}
       />
     </ProjectLayout>
   );

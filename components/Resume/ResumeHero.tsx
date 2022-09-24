@@ -38,7 +38,10 @@ const ResumeHero = () => {
           fontWeight={DEFAULT_STYLES.boldFontWeight}
           fontSize={DEFAULT_STYLES.smallTextFontSize}
         >
-          • Enugu State, Nigeria • <a href="#"> Contact me</a>
+          • Enugu State, Nigeria •{' '}
+          <a href="https://www.linkedin.com/in/alejandro-james-571418225/">
+            Contact me
+          </a>
         </Text>
 
         <Text

@@ -2,6 +2,7 @@ import Images from '../../layout/Images';
 import ProjectListComponent from '../../layout/ProjectListComponent';
 import centerIcon from '../../assets/media/img/netflix.jpeg';
 import ProjectLayout from '../../layout/ProjectLayout';
+import { cvRoutes } from '../../utils/routes';
 
 const NetFlix = () => {
   return (
@@ -18,7 +19,7 @@ const NetFlix = () => {
           'Role: Front end Developer',
           'Tools: ReactJs,Firebase, Chakra ui',
         ]}
-        link={'https://netflixbyjames.netlify.app/'}
+        link={cvRoutes.netflix}
       />
 
       <Images centerIcon={centerIcon} />

@@ -9,9 +9,9 @@ const Home = () => {
     <>
       <Hero />
       <Certificate />
-      <Dyserf />
       <Nestuge />
       <NetFlix />
+      <Dyserf />
     </>
   );
 };

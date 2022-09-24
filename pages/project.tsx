@@ -1,12 +1,10 @@
+import ProjectHero from '../components/Projects/ProjectHero';
+
 const Projects = () => {
   return (
-    <div
-      style={{
-        flex: 1,
-      }}
-    >
-      Projects
-    </div>
+    <>
+      <ProjectHero />
+    </>
   );
 };
 
