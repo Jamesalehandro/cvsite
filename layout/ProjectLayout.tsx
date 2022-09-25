@@ -32,6 +32,9 @@ const ProjectLayout = ({ project }: Props) => {
 
       <a
         href={project.path}
+        target={'_blank'}
+        referrerPolicy={'no-referrer'}
+        rel={'noopener noreferrer'}
         style={{
           zIndex: 5000,
         }}
@@ -51,8 +54,8 @@ const ProjectLayout = ({ project }: Props) => {
           gap={3}
         >
           <Flex
-            align="center"
             width={DEFAULT_STYLES.fullWidth}
+            align={'center'}
             justify={'space-between'}
           >
             <Heading
@@ -72,6 +75,7 @@ const ProjectLayout = ({ project }: Props) => {
               }}
             />
           </Flex>
+
           <Text fontSize={DEFAULT_STYLES.smallTextFontSize} lineHeight={1.5}>
             {project.description}
           </Text>
