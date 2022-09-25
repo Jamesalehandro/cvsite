@@ -1,5 +1,5 @@
-import { Flex, Heading, Icon, Stack, Text, VStack } from '@chakra-ui/react';
 import Image from 'next/future/image';
+import { Flex, Heading, Icon, Stack, Text, VStack } from '@chakra-ui/react';
 import { Project } from '../models';
 import { DEFAULT_STYLES } from '../styles/customStyles';
 import { BsArrowRight } from 'react-icons/bs';
