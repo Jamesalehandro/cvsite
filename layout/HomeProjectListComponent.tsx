@@ -16,7 +16,7 @@ interface Props {
   link: string;
 }
 
-const ProjectListComponent = ({ header, title, list, link }: Props) => {
+const HomeProjectListComponent = ({ header, title, list, link }: Props) => {
   // Render
   const renderList = list.map((item, i) => (
     <ListItem
@@ -74,4 +74,4 @@ const ProjectListComponent = ({ header, title, list, link }: Props) => {
   );
 };
 
-export default ProjectListComponent;
+export default HomeProjectListComponent;

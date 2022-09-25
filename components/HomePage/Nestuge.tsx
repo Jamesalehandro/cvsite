@@ -1,15 +1,15 @@
 import Images from '../../layout/Images';
-import ProjectListComponent from '../../layout/ProjectListComponent';
+import HomeProjectListComponent from '../../layout/HomeProjectListComponent';
 import centerIcon from '../../assets/media/img/leftnestuge.jpeg';
-import ProjectLayout from '../../layout/ProjectLayout';
+import HomeProjectLayout from '../../layout/HomeProjectLayout';
 import { cvRoutes } from '../../utils/routes';
 
 const Nestuge = () => {
   return (
-    <ProjectLayout header>
+    <HomeProjectLayout header>
       <Images centerIcon={centerIcon} />
 
-      <ProjectListComponent
+      <HomeProjectListComponent
         header={'Nestuge'}
         title={
           'A web app that helps you create and manage access to your online events on WhatsApp, Google Meet collect payments and enagage your audience from one place.'
@@ -23,7 +23,7 @@ const Nestuge = () => {
         ]}
         link={cvRoutes.nestuge}
       />
-    </ProjectLayout>
+    </HomeProjectLayout>
   );
 };
 

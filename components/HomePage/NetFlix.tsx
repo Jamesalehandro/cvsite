@@ -1,13 +1,13 @@
 import Images from '../../layout/Images';
-import ProjectListComponent from '../../layout/ProjectListComponent';
+import HomeProjectListComponent from '../../layout/HomeProjectListComponent';
 import centerIcon from '../../assets/media/img/netflix.jpeg';
-import ProjectLayout from '../../layout/ProjectLayout';
+import HomeProjectLayout from '../../layout/HomeProjectLayout';
 import { cvRoutes } from '../../utils/routes';
 
 const NetFlix = () => {
   return (
-    <ProjectLayout>
-      <ProjectListComponent
+    <HomeProjectLayout>
+      <HomeProjectListComponent
         header={'Netflix'}
         title={
           'This is a netflix clone where you can create account and sign in and list the list of different movies and shows.'
@@ -23,7 +23,7 @@ const NetFlix = () => {
       />
 
       <Images centerIcon={centerIcon} />
-    </ProjectLayout>
+    </HomeProjectLayout>
   );
 };
 

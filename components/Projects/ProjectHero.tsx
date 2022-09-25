@@ -1,11 +1,17 @@
 import HeroLayout from '../../layout/HeroLayout';
+import ProjectLayout from '../../layout/ProjectLayout';
 import Nav from '../NavBar/Nav';
 import { cvRoutes } from '../../utils/routes';
 import { Grid, Heading, Text, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles/customStyles';
-import { resumeImg } from '../../store';
+import { heroProjects, resumeImg } from '../../store';
 
 const ProjectHero = () => {
+  // Renders
+  const renderProjects = heroProjects.map((project) => (
+    <ProjectLayout key={project.id} project={project} />
+  ));
+
   return (
     <HeroLayout>
       <Nav
@@ -46,11 +52,17 @@ const ProjectHero = () => {
           w={DEFAULT_STYLES.fullWidth}
           justifyContent={'center'}
           minH={'400px'}
-          pt={10}
           gap={{ base: '30px', lg: 10, xl: '50px' }}
           zIndex={5}
-          templateColumns={{ base: 'repeat(1,1fr)', lg: 'repeat(2,1fr)' }}
-        ></Grid>
+          templateColumns={{
+            base: 'repeat(1,1fr)',
+            md: 'repeat(2,1fr)',
+            lg: 'repeat(3,1fr)',
+            xl: 'repeat(3,1fr)',
+          }}
+        >
+          {renderProjects}
+        </Grid>
       </VStack>
     </HeroLayout>
   );

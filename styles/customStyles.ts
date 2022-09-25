@@ -15,4 +15,5 @@ export const DEFAULT_STYLES = {
   darkColor: '#121212',
   fontFamily: " 'Orbitron', sans-serif",
   bodyHeaderFontSize: 20,
+  borderRadius: '5px',
 };

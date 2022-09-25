@@ -1,12 +1,13 @@
 import Images from '../../layout/Images';
-import ProjectListComponent from '../../layout/ProjectListComponent';
+import HomeProjectListComponent from '../../layout/HomeProjectListComponent';
 import centerIcon from '../../assets/media/img/dyserf.png';
-import ProjectLayout from '../../layout/ProjectLayout';
+import HomeProjectLayout from '../../layout/HomeProjectLayout';
+import { cvRoutes } from '../../utils/routes';
 
 const Dyserf = () => {
   return (
-    <ProjectLayout footer>
-      <ProjectListComponent
+    <HomeProjectLayout footer>
+      <HomeProjectListComponent
         header={'DYSERF'}
         title={
           ' This was built as a project for a product designer. The project shows what the company does and why you should hire them. This was built with NextJS,AOS for scrolling animations and Chakra UI as the design system.'
@@ -18,11 +19,11 @@ const Dyserf = () => {
           'Role: Front end Developer',
           'Tools: ReactJs(NextJs), AOS,Chakra ui',
         ]}
-        link={'https://dyserf.vercel.app/'}
+        link={cvRoutes.dyserf}
       />
 
       <Images centerIcon={centerIcon} />
-    </ProjectLayout>
+    </HomeProjectLayout>
   );
 };
 
