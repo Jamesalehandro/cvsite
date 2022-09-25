@@ -95,12 +95,11 @@ const ResumeHero = () => {
             header={'Summary of skills:'}
             list={[
               'Experienced in creating pixel perfect implementations of designs.',
-              'Recruiting participants, developing interview goals and questions, and conducting user interviews.',
-              'Experienced in defining problem statements, crafting user stories and modeling user journey maps.',
-              ' Experienced in creating effective competitive audit and competitive audit reports.',
-              'Experienced in building out effective research plans on business needs of products.',
-              'Notable observation techniques,  while conducting usability studies',
-              'Visualization using big picture and close-up storyboards illustrating user pain points and solution proposals.',
+              'Experienced in separating the UI from the logic',
+              'Experienced in the usage of firebase and its functionalities to make web applications secure',
+              'Experienced in making sure that sensitive information is not exposed to the client browser',
+              'Notable observation techniques to make sure I implement the application to the test of the client',
+              'Experienced in writing clean and understandable codes',
             ]}
           />
         </Grid>
