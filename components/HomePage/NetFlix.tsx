@@ -6,7 +6,7 @@ import { cvRoutes } from '../../utils/routes';
 
 const NetFlix = () => {
   return (
-    <ProjectLayout footer>
+    <ProjectLayout>
       <ProjectListComponent
         header={'Netflix'}
         title={
