@@ -11,6 +11,8 @@ const Section1 = () => {
       align={'center'}
       justify={'center'}
       py={10}
+      data-aos={'fade-up'}
+      data-aos-duration={'1000'}
     >
       <VStack
         w={DEFAULT_STYLES.containerWidth}

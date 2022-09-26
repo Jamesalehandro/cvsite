@@ -22,6 +22,8 @@ const HomeProjectLayout = (props: Props) => {
       pb={10}
       gap={10}
       px={{ base: 5, xl: 0 }}
+      data-aos={'fade-up'}
+      data-aos-duration={'1000'}
     >
       <Image
         src={customBg}

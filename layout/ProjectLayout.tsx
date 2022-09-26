@@ -18,6 +18,8 @@ const ProjectLayout = ({ project }: Props) => {
       role={'group'}
       minH={'400px'}
       shadow={{ base: 'lg', xl: '2xl' }}
+      data-aos={'zoom-in'}
+      data-aos-duration={'1000'}
     >
       <Image
         src={project.icon}

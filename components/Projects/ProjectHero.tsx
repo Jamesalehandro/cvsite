@@ -30,6 +30,8 @@ const ProjectHero = () => {
         py={{ base: 10, lg: '100px' }}
         gap={'30px'}
         px={{ base: 4, xl: 0 }}
+        data-aos={'fade-up'}
+        data-aos-duration={'1000'}
       >
         <Heading
           fontFamily={DEFAULT_STYLES.fontFamily}

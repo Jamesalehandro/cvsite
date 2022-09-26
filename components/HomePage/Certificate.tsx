@@ -9,6 +9,8 @@ const Certificate = () => {
       bg={DEFAULT_STYLES.darkColor}
       align={'center'}
       justify={'center'}
+      data-aos={'fade-up'}
+      data-aos-duration={'1000'}
     >
       <Flex
         w={DEFAULT_STYLES.containerWidth}

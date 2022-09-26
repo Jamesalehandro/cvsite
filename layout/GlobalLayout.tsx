@@ -1,9 +1,13 @@
 import Head from 'next/head';
+import Aos from 'aos';
 import Footer from '../components/Footer/Footer';
+import Script from 'next/script';
 import { LayoutProps } from '../models/LayoutModels';
 import { DEFAULT_STYLES } from '../styles/customStyles';
 
 const GlobalLayout = ({ children }: LayoutProps) => {
+  typeof window !== 'undefined' && Aos.init();
+
   return (
     <>
       <Head>
@@ -21,14 +25,21 @@ const GlobalLayout = ({ children }: LayoutProps) => {
         <link rel="manifest" href="manifest.json" />
         <link rel="apple-touch-icon" href="favicon.ico" />
 
+        <Script
+          src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+          strategy={'beforeInteractive'}
+        />
+
         <title>Chigbo Ifeanyi James - Front End Developer</title>
       </Head>
+
       <div
         style={{
           width: DEFAULT_STYLES.fullWidth,
           minHeight: DEFAULT_STYLES.fullHeight,
           display: 'flex',
           flexDirection: 'column',
+          backgroundColor: DEFAULT_STYLES.darkColor,
         }}
       >
         {children}
