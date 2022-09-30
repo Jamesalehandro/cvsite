@@ -30,26 +30,29 @@ const ButtonComp = ({
   onClick,
   download,
 }: Props) => {
+  const style = {
+    minWidth: width ?? '223px',
+    height: height ?? '64px',
+    color: color,
+    bgColor: bgColor,
+    borderRadius: '50px',
+    transition: 'all linear 250ms',
+    border: border,
+    fontSize: '1rem',
+    fontWeight: DEFAULT_STYLES.boldFontWeight,
+    textAlign: 'center',
+    display: 'flex',
+    gap: 5,
+    zIndex: 1000,
+  };
+
   return (
     <>
       {internalLink ? (
         <Link href={internalLink}>
           <a>
             <Button
-              minWidth={width ?? '223px'}
-              height={height ?? '64px'}
-              color={color}
-              bgColor={bgColor}
-              borderRadius={'50px'}
-              transition={'all linear 250ms'}
-              border={border}
-              fontSize={16}
-              fontWeight={DEFAULT_STYLES.boldFontWeight}
-              textAlign={'center'}
-              display={'flex'}
-              gap={5}
-              onClick={onClick}
-              zIndex={1000}
+              sx={style}
               _hover={{
                 bgColor: bgColor,
               }}
@@ -58,10 +61,7 @@ const ButtonComp = ({
                 transform: 'scale(0.989)',
               }}
             >
-              <>
-                {leftIcon && leftIcon}
-                {title}
-              </>
+              {title}
             </Button>
           </a>
         </Link>
@@ -73,20 +73,7 @@ const ButtonComp = ({
           rel="noopener noreferrer"
         >
           <Button
-            minWidth={width ?? '223px'}
-            height={height ?? '64px'}
-            color={color}
-            bgColor={bgColor}
-            borderRadius={'50px'}
-            transition={'all linear 250ms'}
-            border={border}
-            fontSize={16}
-            fontWeight={DEFAULT_STYLES.boldFontWeight}
-            textAlign={'center'}
-            onClick={onClick}
-            display={'flex'}
-            gap={5}
-            zIndex={1000}
+            sx={style}
             _hover={{
               bgColor: bgColor,
             }}
@@ -103,20 +90,8 @@ const ButtonComp = ({
         </a>
       ) : (
         <Button
-          minWidth={width ?? '223px'}
-          height={height ?? '64px'}
-          color={color}
-          bgColor={bgColor}
-          borderRadius={'50px'}
-          transition={'all linear 250ms'}
-          border={border}
-          fontSize={16}
-          fontWeight={DEFAULT_STYLES.boldFontWeight}
+          sx={style}
           onClick={onClick}
-          textAlign={'center'}
-          zIndex={1000}
-          display={'flex'}
-          gap={5}
           _hover={{
             bgColor: bgColor,
           }}
@@ -125,10 +100,7 @@ const ButtonComp = ({
             transform: 'scale(0.989)',
           }}
         >
-          <>
-            {leftIcon && leftIcon}
-            {title}
-          </>
+          {title}
         </Button>
       )}
     </>

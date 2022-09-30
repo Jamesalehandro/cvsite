@@ -9,36 +9,30 @@ import { DEFAULT_STYLES } from '../../styles/customStyles';
 const Footer = () => {
   return (
     <VStack bgColor={DEFAULT_STYLES.darkColor}>
-      <Flex
-        width={DEFAULT_STYLES.fullWidth}
-        align={'center'}
-        justifyContent={'center'}
-      >
-        <HStack w={{ base: DEFAULT_STYLES.fullWidth, md: '300px' }}>
-          <ButtonComp
-            width={DEFAULT_STYLES.fullWidth}
-            bgColor={'transparent'}
-            color={DEFAULT_STYLES.whiteColor}
-            title={'Back to top'}
-            onClick={() => window.scrollTo(0, 0)}
-          />
-        </HStack>
-      </Flex>
+      <HStack w={{ base: DEFAULT_STYLES.fullWidth, md: '300px' }}>
+        <ButtonComp
+          width={DEFAULT_STYLES.fullWidth}
+          bgColor={'transparent'}
+          color={DEFAULT_STYLES.whiteColor}
+          title={'Back to top'}
+          onClick={() => scrollTo(0, 0)}
+        />
+      </HStack>
 
       <Stack
+        width={DEFAULT_STYLES.fullWidth}
         gap={4}
         align={'center'}
         pt={'70px'}
         pb={'64px'}
-        width={DEFAULT_STYLES.fullWidth}
         px={4}
       >
         <Text
-          minHeight={'36px'}
           fontSize={DEFAULT_STYLES.smallTextFontSize}
+          color={DEFAULT_STYLES.whiteColor}
+          minHeight={'36px'}
           lineHeight={'36px'}
           textAlign={'center'}
-          color={DEFAULT_STYLES.whiteColor}
         >
           Connect with me
         </Text>
@@ -70,10 +64,10 @@ const Footer = () => {
 
       <Flex
         width={DEFAULT_STYLES.fullWidth}
+        color={DEFAULT_STYLES.whiteColor}
         height={'78px'}
         align={'center'}
         justifyContent={'center'}
-        color={DEFAULT_STYLES.whiteColor}
         position={'relative'}
         px={4}
       >

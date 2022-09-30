@@ -38,7 +38,7 @@ export const heroProjects: Project[] = [
     title: 'BriskPay',
     description:
       ' This was for a hackathon competition. With the help of BriskPay, hundreds of millions of customers may easily pay for goods and services using the data already saved in their BrisksPay accounts.',
-    path: 'https://rapyd-hackathon.vercel.app',
+    path: cvRoutes.briskpay,
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const heroProjects: Project[] = [
     title: 'Gary Morgan',
     description:
       'This is website that a user can see different crypto currencies. It was built with react and firebase.',
-    path: 'https://garymorgan.netlify.app/',
+    path: cvRoutes.invest,
   },
   {
     id: 6,
@@ -54,6 +54,6 @@ export const heroProjects: Project[] = [
     title: 'Admin Dashboard',
     description:
       'This was built during the side hustle internship as part of the grading system. I built the login page and the layout used for the dashboard and the first page you see when you enter the dashboard',
-    path: 'https://adminlogin10.netlify.app/',
+    path: cvRoutes.admin,
   },
 ];

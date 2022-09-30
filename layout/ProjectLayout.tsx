@@ -11,10 +11,10 @@ type Props = {
 const ProjectLayout = ({ project }: Props) => {
   return (
     <Stack
-      position={'relative'}
       height={DEFAULT_STYLES.fullWidth}
-      justifyContent={'flex-end'}
       borderBottom={DEFAULT_STYLES.borderRadius}
+      justifyContent={'flex-end'}
+      position={'relative'}
       role={'group'}
       minH={'400px'}
       shadow={{ base: 'lg', xl: '2xl' }}
@@ -61,16 +61,16 @@ const ProjectLayout = ({ project }: Props) => {
             justify={'space-between'}
           >
             <Heading
-              fontSize={18}
               fontFamily={DEFAULT_STYLES.fontFamily}
               fontWeight={DEFAULT_STYLES.boldFontWeight}
+              fontSize={'1.12rem'}
             >
               {project.title}
             </Heading>
 
             <Icon
               as={BsArrowRight}
-              fontSize={20}
+              fontSize={DEFAULT_STYLES.headerFontSize}
               display={'none'}
               _groupHover={{
                 display: 'flex',

@@ -23,7 +23,7 @@ const Section1 = () => {
         px={{ base: 5, xl: 0 }}
       >
         <Heading
-          fontSize={14}
+          fontSize={DEFAULT_STYLES.smallTextFontSize}
           fontWeight={DEFAULT_STYLES.boldFontWeight}
           fontFamily={DEFAULT_STYLES.fontFamily}
         >

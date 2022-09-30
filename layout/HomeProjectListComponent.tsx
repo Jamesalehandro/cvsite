@@ -38,7 +38,7 @@ const HomeProjectListComponent = ({ header, title, list, link }: Props) => {
       <Heading
         color={DEFAULT_STYLES.whiteColor}
         fontWeight={DEFAULT_STYLES.boldFontWeight}
-        fontSize={{ base: 20, xl: DEFAULT_STYLES.headerFontSize }}
+        fontSize={DEFAULT_STYLES.headerFontSize}
         fontFamily={DEFAULT_STYLES.fontFamily}
         textAlign={'center'}
         textTransform={'capitalize'}
@@ -48,7 +48,7 @@ const HomeProjectListComponent = ({ header, title, list, link }: Props) => {
 
       <Text
         color={DEFAULT_STYLES.whiteColor}
-        fontSize={{ base: DEFAULT_STYLES.smallTextFontSize, xl: 16 }}
+        fontSize={{ base: DEFAULT_STYLES.smallTextFontSize, xl: '1rem' }}
         lineHeight={1.8}
       >
         {title}

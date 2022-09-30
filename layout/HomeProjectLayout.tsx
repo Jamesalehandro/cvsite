@@ -38,7 +38,7 @@ const HomeProjectLayout = (props: Props) => {
           color={DEFAULT_STYLES.whiteColor}
           fontWeight={DEFAULT_STYLES.mediumFontWeight}
           fontFamily={DEFAULT_STYLES.fontFamily}
-          fontSize={{ base: 20, lg: 24 }}
+          fontSize={{ base: DEFAULT_STYLES.headerFontSize, lg: '1.5rem' }}
           lineHeight={'36px'}
           textAlign={'center'}
           zIndex={2}

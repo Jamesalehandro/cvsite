@@ -21,7 +21,7 @@ const Images = ({ centerIcon }: Props) => {
       <Image
         src={centerIcon}
         alt={'Chigbo James'}
-        quality={100}
+        quality={'100'}
         fill
         style={{
           borderRadius: '5px',

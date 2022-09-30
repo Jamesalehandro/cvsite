@@ -35,7 +35,7 @@ const ProjectHero = () => {
       >
         <Heading
           fontFamily={DEFAULT_STYLES.fontFamily}
-          fontSize={{ base: 30, lg: 55 }}
+          fontSize={{ base: '1.87rem', lg: '3.43rem', xl: '3.43rem' }}
           fontWeight={DEFAULT_STYLES.boldFontWeight}
         >
           My Projects

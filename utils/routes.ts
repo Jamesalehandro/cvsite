@@ -5,4 +5,7 @@ export class cvRoutes {
   static nestuge = 'https://www.nestuge.com/';
   static netflix = 'https://netflixbyjames.netlify.app/';
   static dyserf = 'https://dyserf.vercel.app/';
+  static briskpay = 'https://rapyd-hackathon.vercel.app';
+  static invest = 'https://garymorgan.netlify.app/';
+  static admin = 'https://adminlogin10.netlify.app/';
 }

@@ -7,32 +7,34 @@ import { customBg } from '../store/shared';
 
 const HeroLayout = ({ children }: LayoutProps) => {
   return (
-    <VStack
-      width={DEFAULT_STYLES.fullWidth}
-      minHeight={{ base: '600px', xl: '800px' }}
-      position={'relative'}
-    >
-      <Image
-        src={customBg}
-        alt={'Chigbo James'}
-        fill
-        priority
-        style={{
-          objectFit: 'cover',
-        }}
-      />
+    <>
+      <VStack
+        width={DEFAULT_STYLES.fullWidth}
+        minHeight={{ base: '600px', xl: '800px' }}
+        position={'relative'}
+      >
+        <Image
+          src={customBg}
+          alt={'Chigbo James'}
+          fill
+          priority
+          style={{
+            objectFit: 'cover',
+          }}
+        />
 
-      <Image
-        src={herobg}
-        alt={'Chigbo James'}
-        fill
-        style={{
-          objectFit: 'cover',
-        }}
-        priority
-      />
-      {children}
-    </VStack>
+        <Image
+          src={herobg}
+          alt={'Chigbo James'}
+          fill
+          priority
+          style={{
+            objectFit: 'cover',
+          }}
+        />
+        {children}
+      </VStack>
+    </>
   );
 };
 

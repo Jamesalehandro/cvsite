@@ -44,7 +44,7 @@ const Hero = () => {
           minH={'500px'}
         >
           <Heading
-            fontSize={{ base: 20, xl: 24 }}
+            fontSize={{ base: '1.25rem', xl: '1.5rem' }}
             fontFamily={DEFAULT_STYLES.fontFamily}
             lineHeight={'36px'}
           >
@@ -61,8 +61,8 @@ const Hero = () => {
 
           <Heading
             fontSize={{
-              base: 20,
-              xl: 25,
+              base: '1.25rem',
+              xl: '1.6rem',
               '2xl': DEFAULT_STYLES.headerFontSize,
             }}
             lineHeight={'48px'}
@@ -77,13 +77,12 @@ const Hero = () => {
               md: '500px',
               '2xl': '550px',
             }}
-            fontSize={{ base: 13, xl: 18 }}
+            fontSize={{ base: DEFAULT_STYLES.smallTextFontSize, xl: '1rem' }}
             textAlign={'left'}
             whiteSpace={'pre-wrap'}
             lineHeight={2}
             color={DEFAULT_STYLES.whiteColor}
             display={{ base: 'block', lg: 'none' }}
-            fontWeight={400}
           >
             I am a front-end developer specialized in building and occasionally
             designing exceptional digital experiences. Currently, I am focused
@@ -110,10 +109,10 @@ const Hero = () => {
             />
 
             <ButtonComp
-              bgColor={'transparent'}
               color={DEFAULT_STYLES.whiteColor}
-              title={'Connect with me'}
               border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
+              bgColor={'transparent'}
+              title={'Connect with me'}
               link={'https://www.twitter.com/Chigbo_James'}
             />
           </HStack>
@@ -151,7 +150,7 @@ const Hero = () => {
               md: '500px',
               '2xl': '550px',
             }}
-            fontSize={{ base: 14, xl: 18 }}
+            fontSize={{ base: DEFAULT_STYLES.smallTextFontSize, xl: '1.12rem' }}
             textAlign={'justify'}
             whiteSpace={'pre-wrap'}
             lineHeight={1.7}
