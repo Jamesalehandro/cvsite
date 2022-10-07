@@ -79,7 +79,7 @@ const ResumeHero = () => {
             <ItemList
               header={'Current projects'}
               description={
-                ' Implememting  Nestuge’s landing page and dashboard and web-based productivity platform for virtual hosts and creators.'
+                ' Implementing  Nestuge’s landing page and dashboard and web-based productivity platform for virtual hosts and creators.'
               }
             />
 
@@ -88,7 +88,7 @@ const ResumeHero = () => {
               list={[
                 'Bachelor of Art Mass Communication University of Nigeria,Nsukka Enugu State Nigeria.(2019)',
                 'Frontend Development – Side Hustle Internship, (2022)',
-                ' Advanced software engineering Diploma, APTECH Enugu state (In progress)',
+                'Advanced software engineering Diploma, APTECH Enugu state (In progress)',
               ]}
             />
           </Stack>

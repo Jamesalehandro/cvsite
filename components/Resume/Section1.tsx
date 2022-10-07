@@ -60,7 +60,7 @@ const Section1 = () => {
               list={[
                 'I develop the Website of Nestuge Company.',
                 'I built the landing page of the site with NextJS to improve the Search engine optimization of the website and loading speed.',
-                ' I built the events page which I connected with the backend and made request calls to it.',
+                'I built the events page which I connected with the backend and made request calls to it.',
                 'I authenticated user’s login process to make sure the login process is secure',
                 'I built the dashboard for the users.',
               ]}

@@ -17,7 +17,7 @@ const NetFlix = () => {
           'Industry: Entertainment',
           'Produced: Yes',
           'Role: Front end Developer',
-          'Tools: ReactJs,Firebase, Chakra ui',
+          'Tools: ReactJs,Firebase, Chakra UI',
         ]}
         link={cvRoutes.netflix}
       />

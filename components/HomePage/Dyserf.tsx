@@ -13,11 +13,11 @@ const Dyserf = () => {
           ' This was built as a project for a product designer. The project shows what the company does and why you should hire them. This was built with NextJS,AOS for scrolling animations and Chakra UI as the design system.'
         }
         list={[
-          'Platform: Web (app)',
+          'Platform: Web',
           'Industry: Productivity and development',
           'Produced: Yes',
           'Role: Front end Developer',
-          'Tools: ReactJs(NextJs), AOS,Chakra ui',
+          'Tools: ReactJs(NextJs), AOS,Chakra UI',
         ]}
         link={cvRoutes.dyserf}
       />

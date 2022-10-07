@@ -19,7 +19,7 @@ const Nestuge = () => {
           'Industry: Productivity',
           'Produced: Yes',
           'Role: Front end Developer',
-          'Tools: ReactJs(NextJs),Firebase, AOS,Chakra ui',
+          'Tools: ReactJs(NextJs),Firebase, AOS,Chakra UI',
         ]}
         link={cvRoutes.nestuge}
       />
