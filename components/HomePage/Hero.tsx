@@ -83,6 +83,7 @@ const Hero = () => {
             lineHeight={2}
             color={DEFAULT_STYLES.whiteColor}
             display={{ base: 'block', lg: 'none' }}
+            textShadow={'2px 2px 4px rgba(0,0,0,1)'}
           >
             I am a front-end developer specialized in building and occasionally
             designing exceptional digital experiences. Currently, I am focused
@@ -157,6 +158,7 @@ const Hero = () => {
             lineHeight={1.7}
             zIndex={2}
             color={DEFAULT_STYLES.whiteColor}
+            textShadow={'2px 2px 4px rgba(0,0,0,1)'}
           >
             I am a front-end developer specialized in building and occasionally
             designing exceptional digital experiences. Currently, I am focused
