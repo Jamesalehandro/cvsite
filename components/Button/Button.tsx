@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { DEFAULT_STYLES } from '../../styles';
 import { ReactNode } from 'react';
 
 interface Props {

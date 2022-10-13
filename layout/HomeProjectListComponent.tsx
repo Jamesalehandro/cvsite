@@ -1,4 +1,3 @@
-import ButtonComp from '../components/Button/Button';
 import {
   Box,
   Heading,
@@ -7,7 +6,8 @@ import {
   UnorderedList,
   VStack,
 } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../styles/customStyles';
+import { ButtonComp } from '../components';
+import { DEFAULT_STYLES } from '../styles';
 
 interface Props {
   header: string;

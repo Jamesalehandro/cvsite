@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/future/image';
 import { Flex } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../styles/customStyles';
+import { DEFAULT_STYLES } from '../styles';
 
 type Props = {
   centerIcon: StaticImageData;

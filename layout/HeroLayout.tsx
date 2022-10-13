@@ -1,9 +1,9 @@
 import Image from 'next/future/image';
 import herobg from '../assets/media/img/herobg.png';
 import { VStack } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../styles/customStyles';
+import { DEFAULT_STYLES } from '../styles';
 import { LayoutProps } from '../models';
-import { customBg } from '../store/shared';
+import { customBg } from '../store';
 
 const HeroLayout = ({ children }: LayoutProps) => {
   return (

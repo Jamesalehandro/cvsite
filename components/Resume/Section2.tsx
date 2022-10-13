@@ -1,8 +1,8 @@
 import Image from 'next/future/image';
-import ItemListArray from '../../layout/ItemListArray';
 import { Grid, Stack, VStack } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { DEFAULT_STYLES } from '../../styles';
 import { customBg } from '../../store';
+import { ItemListArray } from '../../layout';
 
 const Section2 = () => {
   return (

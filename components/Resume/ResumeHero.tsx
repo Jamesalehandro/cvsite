@@ -1,10 +1,8 @@
-import HeroLayout from '../../layout/HeroLayout';
 import Nav from '../NavBar/Nav';
-import ItemList from '../../layout/ItemList';
-import ItemListArray from '../../layout/ItemListArray';
 import { cvRoutes } from '../../utils/routes';
 import { Grid, Heading, Stack, Text, VStack } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { DEFAULT_STYLES } from '../../styles';
+import { HeroLayout, ItemList, ItemListArray } from '../../layout';
 
 const ResumeHero = () => {
   return (

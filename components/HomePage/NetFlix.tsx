@@ -1,8 +1,10 @@
-import Images from '../../layout/Images';
-import HomeProjectListComponent from '../../layout/HomeProjectListComponent';
 import centerIcon from '../../assets/media/img/netflix.jpeg';
-import HomeProjectLayout from '../../layout/HomeProjectLayout';
-import { cvRoutes } from '../../utils/routes';
+import {
+  HomeProjectLayout,
+  HomeProjectListComponent,
+  Images,
+} from '../../layout';
+import { cvRoutes } from '../../utils';
 
 const NetFlix = () => {
   return (

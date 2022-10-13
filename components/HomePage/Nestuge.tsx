@@ -1,7 +1,9 @@
-import Images from '../../layout/Images';
-import HomeProjectListComponent from '../../layout/HomeProjectListComponent';
 import centerIcon from '../../assets/media/img/leftnestuge.jpeg';
-import HomeProjectLayout from '../../layout/HomeProjectLayout';
+import {
+  HomeProjectLayout,
+  HomeProjectListComponent,
+  Images,
+} from '../../layout';
 import { cvRoutes } from '../../utils/routes';
 
 const Nestuge = () => {

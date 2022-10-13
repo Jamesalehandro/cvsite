@@ -1,4 +1,4 @@
-import ProjectHero from '../components/Projects/ProjectHero';
+import { ProjectHero } from '../components';
 
 const Projects = () => {
   return <ProjectHero />;

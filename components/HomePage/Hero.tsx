@@ -1,12 +1,12 @@
-import HeroLayout from '../../layout/HeroLayout';
 import Nav from '../NavBar/Nav';
 import Image from 'next/future/image';
 import ButtonComp from '../Button/Button';
-import tree from '../../assets/media/img/tree.png';
+import profile2 from '../../assets/media/img/profile2.png';
 import { Box, Grid, Heading, HStack, Stack, Text } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
-import { cvRoutes } from '../../utils/routes';
+import { DEFAULT_STYLES } from '../../styles';
+import { cvRoutes } from '../../utils';
 import { resumeImg } from '../../store';
+import { HeroLayout } from '../../layout';
 
 const Hero = () => {
   return (
@@ -131,15 +131,16 @@ const Hero = () => {
             height={'400px'}
             position={'absolute'}
             top={{ base: 0, xl: '-75px', '2xl': '-70px' }}
-            userSelect={'none'}
+            transition={'all linear 350ms '}
           >
             <Image
-              src={tree}
+              src={profile2}
               alt={'tree'}
               fill
               style={{
-                objectFit: 'cover',
+                objectFit: 'contain',
                 objectPosition: 'center',
+                maskImage: 'linear-gradient(rgba(0, 0, 0, 1), transparent)',
               }}
             />
           </Box>

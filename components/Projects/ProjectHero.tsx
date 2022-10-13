@@ -1,10 +1,9 @@
-import HeroLayout from '../../layout/HeroLayout';
-import ProjectLayout from '../../layout/ProjectLayout';
 import Nav from '../NavBar/Nav';
-import { cvRoutes } from '../../utils/routes';
+import { cvRoutes } from '../../utils';
 import { Grid, Heading, Text, VStack } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { DEFAULT_STYLES } from '../../styles';
 import { heroProjects, resumeImg } from '../../store';
+import { HeroLayout, ProjectLayout } from '../../layout';
 
 const ProjectHero = () => {
   // Renders

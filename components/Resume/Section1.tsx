@@ -1,7 +1,6 @@
-import ItemList from '../../layout/ItemList';
-import ItemListArray from '../../layout/ItemListArray';
 import { Flex, Grid, Heading, Stack, Text, VStack } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { ItemList, ItemListArray } from '../../layout';
+import { DEFAULT_STYLES } from '../../styles';
 
 const Section1 = () => {
   return (

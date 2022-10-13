@@ -2,7 +2,7 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 import { Flex, LinkBox } from '@chakra-ui/react';
 import { NavLink } from '../../models';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { DEFAULT_STYLES } from '../../styles';
 
 interface Prop {
   navLink: NavLink[];

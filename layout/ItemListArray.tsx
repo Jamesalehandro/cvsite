@@ -1,5 +1,5 @@
 import { Heading, ListItem, UnorderedList, VStack } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../styles/customStyles';
+import { DEFAULT_STYLES } from '../styles';
 
 type Props = {
   list: string[];

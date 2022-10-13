@@ -4,7 +4,7 @@ import ButtonComp from '../Button/Button';
 import { Box, Flex, HStack, Stack, Text, VStack } from '@chakra-ui/react';
 import { FaTwitter } from 'react-icons/fa';
 import { AiFillMail } from 'react-icons/ai';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { DEFAULT_STYLES } from '../../styles';
 
 const Footer = () => {
   return (

@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Aos from 'aos';
-import Footer from '../components/Footer/Footer';
 import Script from 'next/script';
-import { LayoutProps } from '../models/LayoutModels';
-import { DEFAULT_STYLES } from '../styles/customStyles';
+import { LayoutProps } from '../models';
+import { DEFAULT_STYLES } from '../styles';
+import { Footer } from '../components';
 
 const GlobalLayout = ({ children }: LayoutProps) => {
   typeof window !== 'undefined' && Aos.init();

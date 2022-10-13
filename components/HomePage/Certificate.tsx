@@ -1,6 +1,6 @@
 import Image from 'next/future/image';
 import { Box, Flex, Text } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../../styles/customStyles';
+import { DEFAULT_STYLES } from '../../styles';
 
 const Certificate = () => {
   return (

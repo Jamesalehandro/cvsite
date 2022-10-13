@@ -1,8 +1,10 @@
-import Images from '../../layout/Images';
-import HomeProjectListComponent from '../../layout/HomeProjectListComponent';
 import centerIcon from '../../assets/media/img/dyserf.png';
-import HomeProjectLayout from '../../layout/HomeProjectLayout';
-import { cvRoutes } from '../../utils/routes';
+import { cvRoutes } from '../../utils';
+import {
+  HomeProjectLayout,
+  HomeProjectListComponent,
+  Images,
+} from '../../layout';
 
 const Dyserf = () => {
   return (

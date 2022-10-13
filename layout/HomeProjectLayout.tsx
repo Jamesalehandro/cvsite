@@ -1,10 +1,10 @@
-import ButtonComp from '../components/Button/Button';
 import Image from 'next/future/image';
 import { Box, Grid, Heading, VStack } from '@chakra-ui/react';
-import { DEFAULT_STYLES } from '../styles/customStyles';
+import { DEFAULT_STYLES } from '../styles';
 import { customBg } from '../store';
 import { LayoutProps } from '../models';
-import { cvRoutes } from '../utils/routes';
+import { cvRoutes } from '../utils';
+import { ButtonComp } from '../components';
 
 interface Props extends LayoutProps {
   header?: boolean;
