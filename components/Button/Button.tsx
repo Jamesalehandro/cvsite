@@ -30,6 +30,7 @@ const ButtonComp = ({
   onClick,
   download,
 }: Props) => {
+  // Styles
   const style = {
     minWidth: width ?? '223px',
     height: height ?? '64px',
