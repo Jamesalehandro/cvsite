@@ -70,14 +70,14 @@ const ResumeHero = () => {
             <ItemList
               header={'Core skills'}
               description={
-                'HTML | CSS | Javascript | ReactJs | NextJs | Github | Typescript | Firebase| TailwindCss | Chakra UI'
+                'HTML | CSS | Javascript | ReactJs | NextJs | Github | Typescript | Firebase | TailwindCss | Chakra UI'
               }
             />
 
             <ItemList
               header={'Current projects'}
               description={
-                ' Implementing  Nestuge’s landing page and dashboard and web-based productivity platform for virtual hosts and creators.'
+                ' Implementing Nestuge’s landing page and dashboard and web-based productivity platform for virtual hosts and creators.'
               }
             />
 

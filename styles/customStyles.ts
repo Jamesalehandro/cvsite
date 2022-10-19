@@ -10,7 +10,7 @@ export const DEFAULT_STYLES = {
   boldFontWeight: 700,
   mediumFontWeight: 500,
   semiBoldFontWeight: 600,
-  smallTextFontSize: '0.87rem',
+  smallTextFontSize: '1rem',
   headerFontSize: '1.75rem',
   darkColor: '#121212',
   fontFamily: " 'Orbitron', sans-serif",
