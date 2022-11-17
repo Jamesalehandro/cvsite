@@ -18,6 +18,13 @@ const GlobalLayout = ({ children }: LayoutProps) => {
           content="I am a front-end developer specialized in building and occasionally designing exceptional digital experiences. Currently, I am focused on building accessible,human-centered products and responsive web pages."
         />
 
+        <meta
+          name="keywords"
+          content="Developer, Development, Frontend, React, React Native, NextJs, Mobile, Web"
+        />
+
+        <meta name="author" content="Chigbo Ifeanyi James" />
+
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content="Developer" />
