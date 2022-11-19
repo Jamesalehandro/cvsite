@@ -1,31 +1,8 @@
 import Image from 'next/future/image';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles';
-import { useEffect } from 'react';
-import { callBackFunction } from '../../utils';
 
 const Certificate = () => {
-  useEffect(() => {
-    const animationsEl = window.document.querySelectorAll('.animateObserver');
-    const observer = new IntersectionObserver(callBackFunction, {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5,
-    });
-
-    for (let i = 0; i < animationsEl.length; i++) {
-      const el = animationsEl[i];
-      observer.observe(el);
-    }
-
-    return () => {
-      for (let i = 0; i < animationsEl.length; i++) {
-        const el = animationsEl[i];
-        observer.unobserve(el);
-      }
-    };
-  }, [callBackFunction]);
-
   return (
     <Flex
       width={DEFAULT_STYLES.fullWidth}
@@ -51,7 +28,6 @@ const Certificate = () => {
           width={{ base: DEFAULT_STYLES.fullWidth, md: '480px' }}
           fontWeight={DEFAULT_STYLES.boldFontWeight}
           textAlign={{ base: 'center', md: 'left' }}
-          className={'animateObserver'}
         >
           Professionally certified by Side Hustle Internship.
           <br />{' '}
@@ -79,7 +55,6 @@ const Certificate = () => {
         <Box
           width={{ base: DEFAULT_STYLES.fullWidth, md: '340px' }}
           height={'340px'}
-          className={'animateObserver'}
           position={'relative'}
         >
           <Image
