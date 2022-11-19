@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -23,4 +22,16 @@
 * {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.animateObserver {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.9s ease-out;
+  transition-delay: 0.2s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateX(0);
 }
