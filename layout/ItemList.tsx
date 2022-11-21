@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../styles';
 
 type Props = {
@@ -8,23 +8,21 @@ type Props = {
 
 const ItemList = (props: Props) => {
   return (
-    <Flex>
-      <Text
-        fontSize={DEFAULT_STYLES.smallTextFontSize}
-        fontWeight={DEFAULT_STYLES.boldFontWeight}
-        fontFamily={DEFAULT_STYLES.fontFamily}
+    <Text
+      fontSize={DEFAULT_STYLES.smallTextFontSize}
+      fontWeight={DEFAULT_STYLES.boldFontWeight}
+      fontFamily={DEFAULT_STYLES.fontFamily}
+    >
+      {props.header}:{' '}
+      <span
+        style={{
+          fontWeight: 400,
+          fontSize: DEFAULT_STYLES.smallTextFontSize,
+        }}
       >
-        {props.header}:{' '}
-        <span
-          style={{
-            fontWeight: 400,
-            fontSize: DEFAULT_STYLES.smallTextFontSize,
-          }}
-        >
-          {props.description}
-        </span>
-      </Text>
-    </Flex>
+        {props.description}
+      </span>
+    </Text>
   );
 };
 
