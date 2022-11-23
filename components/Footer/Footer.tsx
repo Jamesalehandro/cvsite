@@ -15,7 +15,9 @@ const Footer = () => {
           bgColor={'transparent'}
           color={DEFAULT_STYLES.whiteColor}
           title={'Back to top'}
-          onClick={() => scrollTo(0, 0)}
+          onClick={() => {
+            scrollTo(0, 0);
+          }}
         />
       </HStack>
 
