@@ -1,3 +1,4 @@
+import SummaryText from './SummaryText';
 import Nav from '../NavBar/Nav';
 import Image from 'next/future/image';
 import ButtonComp from '../Button/Button';
@@ -71,24 +72,7 @@ const Hero = () => {
             Front End Developer
           </Heading>
 
-          <Text
-            w={{
-              base: DEFAULT_STYLES.fullWidth,
-              md: '500px',
-              '2xl': '550px',
-            }}
-            fontSize={{ base: DEFAULT_STYLES.smallTextFontSize, xl: '1rem' }}
-            textAlign={'left'}
-            whiteSpace={'pre-wrap'}
-            lineHeight={2}
-            color={DEFAULT_STYLES.whiteColor}
-            display={{ base: 'block', lg: 'none' }}
-            textShadow={'2px 2px 4px rgba(0,0,0,1)'}
-          >
-            I am a front-end developer specialized in building and occasionally
-            designing exceptional digital experiences. Currently, I am focused
-            on building accessible and responsive web pages.
-          </Text>
+          <SummaryText display={{ base: 'block', lg: 'none' }} />
 
           <HStack
             pt={'48px'}
@@ -146,7 +130,7 @@ const Hero = () => {
             />
           </Box>
 
-          <Text
+          {/* <Text
             w={{
               base: DEFAULT_STYLES.fullWidth,
               md: '500px',
@@ -163,7 +147,14 @@ const Hero = () => {
             I am a front-end developer specialized in building and occasionally
             designing exceptional digital experiences. Currently, I am focused
             on building accessible and responsive web pages.
-          </Text>
+          </Text> */}
+
+          <SummaryText
+            display={{ base: 'none', lg: 'block' }}
+            xlFontSize="1.12rem"
+            textAlign
+            lineHeight={1.7}
+          />
         </Stack>
       </Grid>
     </HeroLayout>
