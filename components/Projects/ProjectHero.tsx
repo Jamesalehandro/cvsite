@@ -2,12 +2,13 @@ import Nav from '../NavBar/Nav';
 import { cvRoutes } from '../../utils';
 import { Grid, Heading, Text, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles';
-import { heroProjects, resumeImg } from '../../store';
+import { resumeImg } from '../../store';
 import { HeroLayout, ProjectLayout } from '../../layout';
+import { ProjectProps } from '../../models';
 
-const ProjectHero = () => {
+const ProjectHero = ({ data }: ProjectProps) => {
   // Renders
-  const renderProjects = heroProjects.map((project) => (
+  const renderProjects = data.map((project) => (
     <ProjectLayout key={project.id} project={project} />
   ));
 

@@ -7,3 +7,7 @@ export interface Project {
   title: string;
   path: string;
 }
+
+export type ProjectProps = {
+  data: Project[];
+};
