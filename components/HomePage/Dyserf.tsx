@@ -19,7 +19,7 @@ const Dyserf = () => {
           'Industry: Productivity and development',
           'Produced: Yes',
           'Role: Front end Developer',
-          'Tools: ReactJs(NextJs), AOS,Chakra UI',
+          'Tools: ReactJs(NextJs),TypeScript, AOS,Chakra UI',
         ]}
         link={cvRoutes.dyserf}
       />

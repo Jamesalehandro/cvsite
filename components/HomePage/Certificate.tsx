@@ -1,6 +1,7 @@
 import Image from 'next/future/image';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles';
+import { cvRoutes } from '../../utils';
 
 const Certificate = () => {
   return (
@@ -39,7 +40,7 @@ const Certificate = () => {
           >
             See official certificate{' '}
             <a
-              href="https://certificate.terrahq.co/44564AHQC22"
+              href={cvRoutes.certificate}
               target={'_blank'}
               rel="noopener noreferrer"
               style={{

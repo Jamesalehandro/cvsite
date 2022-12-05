@@ -14,14 +14,14 @@ const Nestuge = () => {
       <HomeProjectListComponent
         header={'Nestuge'}
         title={
-          'A web app that helps you create and manage access to your online events on WhatsApp, Google Meet collect payments and enagage your audience from one place.'
+          'A web app that helps you create and manage access to your events on WhatsApp, Google Meet,Slack,Telegram,live venues and collect payments and enagage your audience from one place.'
         }
         list={[
           'Platform: Web (app)',
           'Industry: Productivity',
           'Produced: Yes',
           'Role: Front end Developer',
-          'Tools: ReactJs(NextJs),Firebase, AOS,Chakra UI',
+          'Tools: ReactJs(NextJs),Firebase,TypeScript,AOS,Chakra UI',
         ]}
         link={cvRoutes.nestuge}
       />

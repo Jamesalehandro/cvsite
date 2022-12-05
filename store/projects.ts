@@ -2,7 +2,6 @@ import dyserf from '../assets/media/img/dyserf.png';
 import nestuge from '../assets/media/img/leftnestuge.jpeg';
 import netflix from '../assets/media/img/netflix.jpeg';
 import admin from '../assets/media/img/dashboard.jpeg';
-import invest from '../assets/media/img/investment.jpeg';
 import briskpay from '../assets/media/img/briskpay.png';
 import { cvRoutes } from '../utils/routes';
 import { Project } from '../models';
@@ -39,14 +38,6 @@ export const heroProjects: Project[] = [
     description:
       ' This was for a hackathon competition. With the help of BriskPay, hundreds of millions of customers may easily pay for goods and services using the data already saved in their BrisksPay accounts.',
     path: cvRoutes.briskpay,
-  },
-  {
-    id: 5,
-    icon: invest,
-    title: 'Gary Morgan',
-    description:
-      'This is website that a user can see different crypto currencies. It was built with react and firebase.',
-    path: cvRoutes.invest,
   },
   {
     id: 6,

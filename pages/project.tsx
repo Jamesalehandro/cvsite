@@ -9,6 +9,8 @@ const Projects = ({ data }: ProjectProps) => {
 
 export default Projects;
 
+
+// This was to make the images render faster
 export const getStaticProps: GetStaticProps = () => {
   return {
     props: {

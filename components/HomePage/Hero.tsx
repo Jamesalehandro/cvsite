@@ -130,25 +130,6 @@ const Hero = () => {
             />
           </Box>
 
-          {/* <Text
-            w={{
-              base: DEFAULT_STYLES.fullWidth,
-              md: '500px',
-              '2xl': '550px',
-            }}
-            fontSize={{ base: DEFAULT_STYLES.smallTextFontSize, xl: '1.12rem' }}
-            textAlign={'justify'}
-            whiteSpace={'pre-wrap'}
-            lineHeight={1.7}
-            zIndex={2}
-            color={DEFAULT_STYLES.whiteColor}
-            textShadow={'2px 2px 4px rgba(0,0,0,1)'}
-          >
-            I am a front-end developer specialized in building and occasionally
-            designing exceptional digital experiences. Currently, I am focused
-            on building accessible and responsive web pages.
-          </Text> */}
-
           <SummaryText
             display={{ base: 'none', lg: 'block' }}
             xlFontSize="1.12rem"

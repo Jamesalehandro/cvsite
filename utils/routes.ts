@@ -6,6 +6,6 @@ export class cvRoutes {
   static netflix = 'https://netflixbyjames.netlify.app/';
   static dyserf = 'https://dyserf.vercel.app/';
   static briskpay = 'https://rapyd-hackathon.vercel.app';
-  static invest = 'https://garymorgan.netlify.app/';
   static admin = 'https://adminlogin10.netlify.app/';
+  static certificate = 'https://certificate.terrahq.co/44564AHQC22';
 }
