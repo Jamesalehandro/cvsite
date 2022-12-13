@@ -19,8 +19,8 @@ const ItemListArray = ({ list, header }: Props) => {
   ));
 
   return (
-    <VStack alignItems={'flex-start'}>
-      <Heading fontSize={'1rem'} fontFamily={DEFAULT_STYLES.fontFamily}>
+    <VStack alignItems='flex-start'>
+      <Heading fontSize='1rem' fontFamily={DEFAULT_STYLES.fontFamily}>
         {header}
       </Heading>
 

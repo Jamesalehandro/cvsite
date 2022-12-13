@@ -4,16 +4,14 @@ import {
   HomeProjectListComponent,
   Images,
 } from '../../layout';
-import { cvRoutes } from '../../utils';
+import { CvRoutes } from '../../utils';
 
 const NetFlix = () => {
   return (
     <HomeProjectLayout>
       <HomeProjectListComponent
-        header={'Netflix'}
-        title={
-          'This is a netflix clone where you can create account and sign in and list the list of different movies and shows.'
-        }
+        header='Netflix'
+        title='This is a netflix clone where you can create account and sign in and list the list of different movies and shows.'
         list={[
           'Platform: Web (app)',
           'Industry: Entertainment',
@@ -21,7 +19,7 @@ const NetFlix = () => {
           'Role: Front end Developer',
           'Tools: ReactJs,Firebase, Chakra UI',
         ]}
-        link={cvRoutes.netflix}
+        link={CvRoutes.netflix}
       />
 
       <Images centerIcon={centerIcon} />

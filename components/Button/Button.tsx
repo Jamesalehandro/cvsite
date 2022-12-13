@@ -69,9 +69,9 @@ const ButtonComp = ({
       ) : link ? (
         <a
           href={link}
-          target={'_blank'}
+          target='_blank'
           download={download}
-          rel="noopener noreferrer"
+          rel='noopener noreferrer'
         >
           <Button
             sx={style}

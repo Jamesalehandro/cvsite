@@ -21,12 +21,12 @@ const SummaryText = ({ xlFontSize, textAlign, lineHeight, display }: Props) => {
         xl: xlFontSize ?? '1rem',
       }}
       textAlign={textAlign ? 'justify' : 'left'}
-      whiteSpace={'pre-wrap'}
+      whiteSpace='pre-wrap'
       lineHeight={lineHeight ?? 2}
       zIndex={2}
       color={DEFAULT_STYLES.whiteColor}
       display={display}
-      textShadow={'2px 2px 4px rgba(0,0,0,1)'}
+      textShadow='2px 2px 4px rgba(0,0,0,1)'
     >
       I am a front-end developer specialized in building and occasionally
       designing exceptional digital experiences. Currently, I am focused on

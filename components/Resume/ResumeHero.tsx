@@ -1,5 +1,5 @@
 import Nav from '../NavBar/Nav';
-import { cvRoutes } from '../../utils/routes';
+import { CvRoutes } from '../../utils';
 import { Grid, Heading, Stack, Text, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles';
 import { HeroLayout, ItemList, ItemListArray } from '../../layout';
@@ -9,22 +9,22 @@ const ResumeHero = () => {
     <HeroLayout>
       <Nav
         navLink={[
-          { path: cvRoutes.home, title: 'Home' },
-          { path: cvRoutes.project, title: 'Projects' },
+          { path: CvRoutes.home, title: 'Home' },
+          { path: CvRoutes.project, title: 'Projects' },
         ]}
       />
 
       <VStack
         w={DEFAULT_STYLES.containerWidth}
-        minH={'700px'}
+        minH='700px'
         zIndex={5}
-        alignItems={'flex-start'}
+        alignItems='flex-start'
         color={DEFAULT_STYLES.whiteColor}
         py={{ base: 10, lg: '100px' }}
-        gap={'30px'}
+        gap='30px'
         px={{ base: 4, xl: 0 }}
-        data-aos={'fade-up'}
-        data-aos-duration={'1000'}
+        data-aos='fade-up'
+        data-aos-duration='1000'
       >
         <Heading
           fontFamily={DEFAULT_STYLES.fontFamily}
@@ -39,7 +39,12 @@ const ResumeHero = () => {
           fontSize={DEFAULT_STYLES.smallTextFontSize}
         >
           • Enugu State, Nigeria •{' '}
-          <a href="https://www.linkedin.com/in/alejandro-james-571418225/">
+          <a
+            href={CvRoutes.linkedinUrl}
+            rel='noopener noreferrer'
+            target='_blank'
+            title='Contact me'
+          >
             Contact me
           </a>
         </Text>
@@ -59,8 +64,8 @@ const ResumeHero = () => {
 
         <Grid
           w={DEFAULT_STYLES.fullWidth}
-          justifyContent={'center'}
-          minH={'400px'}
+          justifyContent='center'
+          minH='400px'
           pt={10}
           gap={{ base: '30px', lg: 10, xl: '50px' }}
           zIndex={5}
@@ -68,21 +73,17 @@ const ResumeHero = () => {
         >
           <Stack gap={3}>
             <ItemList
-              header={'Core skills'}
-              description={
-                'HTML | CSS | Javascript | ReactJs | React Native | NextJs | Github | Typescript | Firebase | TailwindCss | Chakra UI|'
-              }
+              header='Core skills'
+              description='HTML | CSS | Javascript | ReactJs | React Native | NextJs | Github | Typescript | Firebase | TailwindCss | Chakra UI|'
             />
 
             <ItemList
-              header={'Current projects'}
-              description={
-                'Implementing Nestuge’s landing page and dashboard which is a web-based productivity platform for hosts and creators. Which allows them to automatically share secured access to their online communities, events, resources and more.'
-              }
+              header='Current projects'
+              description='Implementing Nestuge’s landing page and dashboard which is a web-based productivity platform for hosts and creators. Which allows them to automatically share secured access to their online communities, events, resources and more.'
             />
 
             <ItemListArray
-              header={'Education:'}
+              header='Education:'
               list={[
                 'Bachelor of Art Mass Communication University of Nigeria,Nsukka Enugu State Nigeria.(2019)',
                 'Frontend Development – Side Hustle Internship, (2022)',
@@ -92,7 +93,7 @@ const ResumeHero = () => {
           </Stack>
 
           <ItemListArray
-            header={'Summary of skills:'}
+            header='Summary of skills:'
             list={[
               'Experienced in creating pixel perfect implementations of designs.',
               'Experienced in separating the UI from the logic',

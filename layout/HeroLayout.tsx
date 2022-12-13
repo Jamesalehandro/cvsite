@@ -11,11 +11,11 @@ const HeroLayout = ({ children }: LayoutProps) => {
       <VStack
         width={DEFAULT_STYLES.fullWidth}
         minHeight={{ base: '600px', xl: '800px' }}
-        position={'relative'}
+        position='relative'
       >
         <Image
           src={customBg}
-          alt={'Chigbo James'}
+          alt='Chigbo James'
           fill
           priority
           style={{
@@ -25,7 +25,7 @@ const HeroLayout = ({ children }: LayoutProps) => {
 
         <Image
           src={herobg}
-          alt={'Chigbo James'}
+          alt='Chigbo James'
           fill
           priority
           style={{

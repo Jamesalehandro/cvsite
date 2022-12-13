@@ -4,7 +4,7 @@ import {
   HomeProjectListComponent,
   Images,
 } from '../../layout';
-import { cvRoutes } from '../../utils/routes';
+import { CvRoutes } from '../../utils';
 
 const Nestuge = () => {
   return (
@@ -12,10 +12,8 @@ const Nestuge = () => {
       <Images centerIcon={centerIcon} />
 
       <HomeProjectListComponent
-        header={'Nestuge'}
-        title={
-          'A web app that helps you create and manage access to your events on WhatsApp, Google Meet,Slack,Telegram,live venues and collect payments and enagage your audience from one place.'
-        }
+        header='Nestuge'
+        title='A web app that helps you create and manage access to your events on WhatsApp, Google Meet,Slack,Telegram,live venues and collect payments and enagage your audience from one place.'
         list={[
           'Platform: Web (app)',
           'Industry: Productivity',
@@ -23,7 +21,7 @@ const Nestuge = () => {
           'Role: Front end Developer',
           'Tools: ReactJs(NextJs),Firebase,TypeScript,AOS,Chakra UI',
         ]}
-        link={cvRoutes.nestuge}
+        link={CvRoutes.nestuge}
       />
     </HomeProjectLayout>
   );

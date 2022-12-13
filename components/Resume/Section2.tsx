@@ -8,18 +8,18 @@ const Section2 = () => {
   return (
     <VStack
       width={DEFAULT_STYLES.fullWidth}
-      align={'center'}
-      justify={'center'}
-      position={'relative'}
+      align='center'
+      justify='center'
+      position='relative'
       py={10}
       gap={10}
       px={{ base: 5, xl: 0 }}
-      data-aos={'fade-up'}
-      data-aos-duration={'1000'}
+      data-aos='fade-up'
+      data-aos-duration='1000'
     >
       <Image
         src={customBg}
-        alt={'Chigbo James'}
+        alt='Chigbo James'
         fill
         priority
         style={{ objectFit: 'cover' }}
@@ -32,9 +32,9 @@ const Section2 = () => {
         templateColumns={{ base: 'repeat(1,1fr)', md: 'repeat(2,1fr)' }}
         zIndex={5}
       >
-        <Stack alignItems={'flex-start'}>
+        <Stack alignItems='flex-start'>
           <ItemListArray
-            header={'Volunteer and service positions'}
+            header='Volunteer and service positions'
             list={[
               'Director of Games  -  Mass communication department, University of Nigeria, Nsukka.',
               'Independent National Electoral Commission Ad hoc Staff',

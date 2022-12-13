@@ -1,5 +1,5 @@
 import Nav from '../NavBar/Nav';
-import { cvRoutes } from '../../utils';
+import { CvRoutes } from '../../utils';
 import { Grid, Heading, Text, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../../styles';
 import { resumeImg } from '../../store';
@@ -16,22 +16,22 @@ const ProjectHero = ({ data }: ProjectProps) => {
     <HeroLayout>
       <Nav
         navLink={[
-          { path: cvRoutes.home, title: 'Home' },
-          { path: cvRoutes.resume, title: 'Online resume', icon: resumeImg },
+          { path: CvRoutes.home, title: 'Home' },
+          { path: CvRoutes.resume, title: 'Online resume', icon: resumeImg },
         ]}
       />
 
       <VStack
         w={DEFAULT_STYLES.containerWidth}
-        minH={'700px'}
+        minH='700px'
         zIndex={5}
-        alignItems={'flex-start'}
+        alignItems='flex-start'
         color={DEFAULT_STYLES.whiteColor}
         py={{ base: 10, lg: '100px' }}
-        gap={'30px'}
+        gap='30px'
         px={{ base: 4, xl: 0 }}
-        data-aos={'fade-up'}
-        data-aos-duration={'1000'}
+        data-aos='fade-up'
+        data-aos-duration='1000'
       >
         <Heading
           fontFamily={DEFAULT_STYLES.fontFamily}
@@ -52,8 +52,8 @@ const ProjectHero = ({ data }: ProjectProps) => {
 
         <Grid
           w={DEFAULT_STYLES.fullWidth}
-          justifyContent={'center'}
-          minH={'400px'}
+          justifyContent='center'
+          minH='400px'
           gap={{ base: '30px', lg: 10, xl: '50px' }}
           zIndex={5}
           templateColumns={{

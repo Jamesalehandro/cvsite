@@ -15,21 +15,21 @@ const Nav = ({ navLink }: Prop) => {
       <LinkBox
         key={`${nav.title}-${i}`}
         color={DEFAULT_STYLES.whiteColor}
-        minH={'28px'}
+        minH='28px'
         fontWeight={DEFAULT_STYLES.boldFontWeight}
         fontSize={DEFAULT_STYLES.smallTextFontSize}
-        role={'group'}
+        role='group'
       >
         <Flex
-          gap={'10px'}
-          align={'center'}
+          gap='10px'
+          align='center'
           _groupHover={{
             color: '#a5a1a1',
           }}
         >
           <Link href={nav.path}>{nav.title}</Link>
           {nav.icon && (
-            <Image src={nav.icon} alt={'Nav'} priority quality={100} />
+            <Image src={nav.icon} alt='Nav' priority quality={100} />
           )}
         </Flex>
       </LinkBox>
@@ -39,8 +39,8 @@ const Nav = ({ navLink }: Prop) => {
   return (
     <Flex
       w={DEFAULT_STYLES.fullWidth}
-      justifyContent={'flex-end'}
-      align={'center'}
+      justifyContent='flex-end'
+      align='center'
       zIndex={1}
       pr={{ base: 5, xl: '50px' }}
       py={2}

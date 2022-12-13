@@ -1,5 +1,5 @@
 import centerIcon from '../../assets/media/img/dyserf.png';
-import { cvRoutes } from '../../utils';
+import { CvRoutes } from '../../utils';
 import {
   HomeProjectLayout,
   HomeProjectListComponent,
@@ -10,10 +10,8 @@ const Dyserf = () => {
   return (
     <HomeProjectLayout footer>
       <HomeProjectListComponent
-        header={'DYSERF'}
-        title={
-          ' This was built as a project for a product designer. The project shows what the company does and why you should hire them. This was built with NextJS,AOS for scrolling animations and Chakra UI as the design system.'
-        }
+        header='DYSERF'
+        title=' This was built as a project for a product designer. The project shows what the company does and why you should hire them. This was built with NextJS,AOS for scrolling animations and Chakra UI as the design system.'
         list={[
           'Platform: Web',
           'Industry: Productivity and development',
@@ -21,7 +19,7 @@ const Dyserf = () => {
           'Role: Front end Developer',
           'Tools: ReactJs(NextJs),TypeScript, AOS,Chakra UI',
         ]}
-        link={cvRoutes.dyserf}
+        link={CvRoutes.dyserf}
       />
 
       <Images centerIcon={centerIcon} />

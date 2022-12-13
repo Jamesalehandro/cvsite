@@ -30,18 +30,18 @@ const HomeProjectListComponent = ({ header, title, list, link }: Props) => {
 
   return (
     <VStack
-      align={'flex-start'}
       width={{ base: DEFAULT_STYLES.fullWidth, lg: '456px' }}
       gap={2}
       zIndex={3000}
+      align='flex-start'
     >
       <Heading
         color={DEFAULT_STYLES.whiteColor}
         fontWeight={DEFAULT_STYLES.boldFontWeight}
         fontSize={DEFAULT_STYLES.headerFontSize}
         fontFamily={DEFAULT_STYLES.fontFamily}
-        textAlign={'center'}
-        textTransform={'capitalize'}
+        textAlign='center'
+        textTransform='capitalize'
       >
         {header}
       </Heading>
@@ -60,14 +60,14 @@ const HomeProjectListComponent = ({ header, title, list, link }: Props) => {
         opacity={0.5}
       />
 
-      <UnorderedList pl={3.5} pb={'40px'}>
+      <UnorderedList pl={3.5} pb='40px'>
         {renderList}
       </UnorderedList>
 
       <ButtonComp
         bgColor={DEFAULT_STYLES.whiteColor}
         color={DEFAULT_STYLES.darkColor}
-        title={'View project'}
+        title='View project'
         link={link}
       />
     </VStack>

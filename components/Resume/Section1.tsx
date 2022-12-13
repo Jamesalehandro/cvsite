@@ -7,18 +7,18 @@ const Section1 = () => {
     <Flex
       width={DEFAULT_STYLES.fullWidth}
       bg={DEFAULT_STYLES.darkColor}
-      align={'center'}
-      justify={'center'}
+      align='center'
+      justify='center'
       py={10}
-      data-aos={'fade-up'}
-      data-aos-duration={'1000'}
+      data-aos='fade-up'
+      data-aos-duration='1000'
     >
       <VStack
         w={DEFAULT_STYLES.containerWidth}
         color={DEFAULT_STYLES.whiteColor}
-        minH={'400px'}
-        justifyContent={'center'}
-        align={'flex-start'}
+        minH='400px'
+        justifyContent='center'
+        align='flex-start'
         px={{ base: 5, xl: 0 }}
       >
         <Heading
@@ -31,8 +31,8 @@ const Section1 = () => {
 
         <Grid
           w={DEFAULT_STYLES.fullWidth}
-          justifyContent={'center'}
-          minH={'400px'}
+          justifyContent='center'
+          minH='400px'
           py={10}
           gap={{ base: '30px', lg: 10, xl: '50px' }}
           zIndex={5}
@@ -46,16 +46,14 @@ const Section1 = () => {
               NESTUGE TECHNOLOGIES • Enugu, Nigeria • June 2022 to Present
             </Text>
 
-            <ItemList header={'Role'} description={'Front end developer'} />
+            <ItemList header='Role' description='Front end developer' />
             <ItemList
-              header={'Achievements'}
-              description={
-                'Won the Supervisor bonus in the first month of working there'
-              }
+              header='Achievements'
+              description='Won the Supervisor bonus in the first month of working there'
             />
 
             <ItemListArray
-              header={'Tasks and duties:'}
+              header='Tasks and duties:'
               list={[
                 'I develop the Website of Nestuge Company.',
                 'I built the landing page of the site with NextJS to improve the Search engine optimization of the website and loading speed.',
@@ -74,10 +72,10 @@ const Section1 = () => {
               Techathon Internship • Nigeria • June 2022 to Present
             </Text>
 
-            <ItemList header={'Role'} description={'Front end developer'} />
+            <ItemList header='Role' description='Front end developer' />
 
             <ItemListArray
-              header={'Tasks and duties:'}
+              header='Tasks and duties:'
               list={[
                 'I taught ReactJs to a group of 175 students.',
                 'I grade and access their progress in ReactJs with assignments and test.',

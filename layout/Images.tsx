@@ -9,19 +9,19 @@ type Props = {
 const Images = ({ centerIcon }: Props) => {
   return (
     <Flex
-      position={'relative'}
-      align={'center'}
       zIndex={3}
       width={{ base: DEFAULT_STYLES.fullWidth, xl: '600px' }}
       height={{ base: '400px', lg: '500px' }}
-      borderRadius={'5px'}
-      overflow={'hidden'}
-      shadow={'2xl'}
+      position='relative'
+      align='center'
+      borderRadius='5px'
+      overflow='hidden'
+      shadow='2xl'
     >
       <Image
         src={centerIcon}
-        alt={'Chigbo James'}
-        quality={'100'}
+        alt='Chigbo James'
+        quality='100'
         fill
         style={{
           borderRadius: '5px',

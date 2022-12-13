@@ -3,7 +3,7 @@ import { Box, Grid, Heading, VStack } from '@chakra-ui/react';
 import { DEFAULT_STYLES } from '../styles';
 import { customBg } from '../store';
 import { LayoutProps } from '../models';
-import { cvRoutes } from '../utils';
+import { CvRoutes } from '../utils';
 import { ButtonComp } from '../components';
 
 interface Props extends LayoutProps {
@@ -15,19 +15,19 @@ const HomeProjectLayout = (props: Props) => {
   return (
     <VStack
       width={DEFAULT_STYLES.fullWidth}
-      align={'center'}
-      justify={'center'}
-      position={'relative'}
+      align='center'
+      justify='center'
+      position='relative'
       pt={5}
       pb={10}
       gap={10}
       px={{ base: 5, xl: 0 }}
-      data-aos={'fade-up'}
-      data-aos-duration={'1000'}
+      data-aos='fade-up'
+      data-aos-duration='1000'
     >
       <Image
         src={customBg}
-        alt={'Chigbo James'}
+        alt='Chigbo James'
         fill
         priority
         style={{ objectFit: 'cover' }}
@@ -39,8 +39,8 @@ const HomeProjectLayout = (props: Props) => {
           fontWeight={DEFAULT_STYLES.mediumFontWeight}
           fontFamily={DEFAULT_STYLES.fontFamily}
           fontSize={{ base: DEFAULT_STYLES.headerFontSize, lg: '1.5rem' }}
-          lineHeight={'36px'}
-          textAlign={'center'}
+          lineHeight='36px'
+          textAlign='center'
           zIndex={2}
         >
           Featured Projects
@@ -58,8 +58,8 @@ const HomeProjectLayout = (props: Props) => {
           lg: 'repeat(2,1fr)',
           xl: 'repeat(2,1fr)',
         }}
-        alignItems={'center'}
-        justifyItems={'center'}
+        alignItems='center'
+        justifyItems='center'
       >
         {props.children}
       </Grid>
@@ -67,12 +67,12 @@ const HomeProjectLayout = (props: Props) => {
       {props.footer && (
         <Box width={{ base: '80%', md: '300px' }}>
           <ButtonComp
-            bgColor={'transparent'}
+            bgColor='transparent'
             color={DEFAULT_STYLES.whiteColor}
-            title={'See all projects'}
+            title='See all projects'
             border={`1px solid ${DEFAULT_STYLES.whiteColor}`}
             width={DEFAULT_STYLES.fullWidth}
-            internalLink={cvRoutes.project}
+            internalLink={CvRoutes.project}
           />
         </Box>
       )}

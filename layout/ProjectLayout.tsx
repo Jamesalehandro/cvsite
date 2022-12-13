@@ -13,13 +13,13 @@ const ProjectLayout = ({ project }: Props) => {
     <Stack
       height={DEFAULT_STYLES.fullWidth}
       borderBottom={DEFAULT_STYLES.borderRadius}
-      justifyContent={'flex-end'}
-      position={'relative'}
-      role={'group'}
-      minH={'400px'}
+      justifyContent='flex-end'
+      position='relative'
+      role='group'
+      minH='400px'
       shadow={{ base: 'lg', xl: '2xl' }}
-      data-aos={'zoom-in'}
-      data-aos-duration={'1000'}
+      data-aos='zoom-in'
+      data-aos-duration='1000'
     >
       <Image
         src={project.icon}
@@ -34,9 +34,9 @@ const ProjectLayout = ({ project }: Props) => {
 
       <a
         href={project.path}
-        target={'_blank'}
-        referrerPolicy={'no-referrer'}
-        rel={'noopener noreferrer'}
+        target='_blank'
+        referrerPolicy='no-referrer'
+        rel='noopener noreferrer'
         style={{
           zIndex: 5000,
         }}
@@ -44,10 +44,10 @@ const ProjectLayout = ({ project }: Props) => {
         <VStack
           color={DEFAULT_STYLES.whiteColor}
           borderBottomRadius={DEFAULT_STYLES.borderRadius}
-          minH={'150px'}
-          bgColor={'#222222'}
-          transition={'all linear .5s'}
-          alignItems={'flex-start'}
+          minH='150px'
+          bgColor='#222222'
+          transition='all linear .5s'
+          alignItems='flex-start'
           _groupHover={{
             bgColor: DEFAULT_STYLES.whiteColor,
             color: DEFAULT_STYLES.darkColor,
@@ -57,13 +57,13 @@ const ProjectLayout = ({ project }: Props) => {
         >
           <Flex
             width={DEFAULT_STYLES.fullWidth}
-            align={'center'}
-            justify={'space-between'}
+            align='center'
+            justify='space-between'
           >
             <Heading
               fontFamily={DEFAULT_STYLES.fontFamily}
               fontWeight={DEFAULT_STYLES.boldFontWeight}
-              fontSize={'1.12rem'}
+              fontSize='1.12rem'
             >
               {project.title}
             </Heading>
@@ -71,7 +71,7 @@ const ProjectLayout = ({ project }: Props) => {
             <Icon
               as={BsArrowRight}
               fontSize={DEFAULT_STYLES.headerFontSize}
-              display={'none'}
+              display='none'
               _groupHover={{
                 display: 'flex',
               }}
