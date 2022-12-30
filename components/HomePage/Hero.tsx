@@ -14,6 +14,7 @@ const Hero = () => {
     <HeroLayout>
       <Nav
         navLink={[
+          { path: CvRoutes.github, title: 'GitHub' },
           { path: CvRoutes.resume, title: 'Online resume', icon: resumeImg },
         ]}
       />

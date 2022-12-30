@@ -72,6 +72,7 @@ const ButtonComp = ({
           target='_blank'
           download={download}
           rel='noopener noreferrer'
+          referrerPolicy='no-referrer'
         >
           <Button
             sx={style}

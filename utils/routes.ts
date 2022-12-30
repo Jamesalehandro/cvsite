@@ -12,4 +12,5 @@ export class CvRoutes {
     'https://www.linkedin.com/in/chigbo-ifeanyi-james-571418225/';
   static twitterUrl = 'https://www.twitter.com/Chigbo_James';
   static gmailUrl = 'jamesalehandro@gmail.com';
+  static github = 'https://github.com/Jamesalehandro';
 }

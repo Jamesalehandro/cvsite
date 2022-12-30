@@ -11,6 +11,8 @@ interface Prop {
 const Nav = ({ navLink }: Prop) => {
   // Renders
   const renderNav = navLink.map((nav, i) => {
+    const isExternal = nav.path.startsWith('https://');
+
     return (
       <LinkBox
         key={`${nav.title}-${i}`}
@@ -27,7 +29,18 @@ const Nav = ({ navLink }: Prop) => {
             color: '#a5a1a1',
           }}
         >
-          <Link href={nav.path}>{nav.title}</Link>
+          {isExternal ? (
+            <a
+              href={nav.path}
+              rel='noopener noreferrer'
+              target='_blank'
+              referrerPolicy='no-referrer'
+            >
+              {nav.title}
+            </a>
+          ) : (
+            <Link href={nav.path}>{nav.title}</Link>
+          )}
           {nav.icon && (
             <Image src={nav.icon} alt='Nav' priority quality={100} />
           )}
